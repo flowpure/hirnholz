@@ -140,8 +140,7 @@
     border:1px solid var(--rule);
     background:var(--paper-2);
   }
-  .tagesfrage-label{font-family:var(--sans);font-size:clamp(.5rem,.75vw,.6rem);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}
-  .tagesfrage-text{font-family:var(--serif);font-style:italic;font-size:clamp(.95rem,1.8vw,1.1rem);line-height:1.65;color:var(--ink-2)}
+  .tagesfrage-label{font-family:var(--sans);font-size:clamp(.5rem,.75vw,.6rem);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem}  .tagesfrage-text{font-family:var(--serif);font-style:italic;font-size:clamp(.95rem,1.8vw,1.1rem);line-height:1.65;color:var(--ink-2)}
 
   /* ── Divider ── */
   .divider{max-width:var(--max-text);display:flex;align-items:center;gap:1rem;margin:var(--space-l) 0}
@@ -649,7 +648,7 @@ async function getTodayStory() {
 function render(story) {
   const paras = (story.absaetze || []).map(p => `<p>${p}</p>`).join('');
   const frageHtml = story.frage
-    ? `<div class="tagesfrage"><div class="tagesfrage-label">Zum Nachdenken</div><p class="tagesfrage-text">${story.frage}</p></div>`
+    ? `<div class="tagesfrage"><div class="tagesfrage-label">Denkimpuls für heute</div><p class="tagesfrage-text">${story.frage}</p></div>`
     : '';
 
   const el = document.getElementById('js-article');
