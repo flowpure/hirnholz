@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Der tägliche Stauner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:     #faf7f0;
+    --paper-2:   #f0ece0;
+    --paper-3:   #e8e2d0;
+    --ink:       #1a1a14;
+    --ink-2:     #2e2e24;
+    --ink-3:     #4a4a3a;
+    --muted:     #787060;
+    --rule:      #ccc8b8;
+    --green:     #2d6a4f;
+    --green-2:   #40916c;
+    --green-3:   #52b788;
+    --green-pale:#d8f3dc;
+    --yellow:    #f9c74f;
+    --serif:     'Playfair Display', Georgia, serif;
+    --body:      'Source Serif 4', Georgia, serif;
+    --sans:      'DM Sans', system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:     #1c1c14;
+      --paper-2:   #242418;
+      --paper-3:   #2c2c20;
+      --ink:       #f5f0e4;
+      --ink-2:     #ddd8c8;
+      --ink-3:     #b8b4a0;
+      --muted:     #888070;
+      --rule:      #3a3a2c;
+      --green:     #52b788;
+      --green-2:   #74c69d;
+      --green-3:   #95d5b2;
+      --green-pale:#1b4332;
+      --yellow:    #f9c74f;
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    min-height: 100vh;
+  }
+
+  /* ═══════════════════════════
+     MASTHEAD
+  ═══════════════════════════ */
+  .masthead {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0;
+  }
+
+  .masthead-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 2rem 1.75rem;
+  }
+
+  .m-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    flex-wrap: wrap;
+  }
+
+  .m-tag {
+    font-family: var(--sans);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green-3);
+  }
+
+  .m-date-top {
+    font-family: var(--sans);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .m-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .m-title {
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 7vw, 5.8rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: var(--paper);
+    flex-shrink: 0;
+  }
+
+  .m-title-accent {
+    color: var(--green-3);
+    font-style: italic;
+  }
+
+  .m-tagline {
+    font-family: var(--body);
+    font-style: italic;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.4;
+    max-width: 280px;
+    align-self: flex-end;
+    padding-bottom: 0.2rem;
+  }
+
+  /* Green band below masthead */
+  .green-band {
+    background: var(--green);
+    padding: 0.55rem 0;
+  }
+
+  .green-band-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .band-motto {
+    font-family: var(--sans);
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .band-date {
+    font-family: var(--sans);
+    font-size: 0.62rem;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 0.08em;
+  }
+
+  /* ═══════════════════════════
+     MAIN CONTENT
+  ═══════════════════════════ */
+  .main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 7rem;
+  }
+
+  /* Loading */
+  .state-loading {
+    text-align: center;
+    padding: 8rem 2rem;
+  }
+
+  .loading-leaf {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    animation: sway 3s ease-in-out infinite;
+  }
+
+  @keyframes sway {
+    0%,100% { transform: rotate(-8deg) scale(0.95); opacity: 0.4; }
+    50%      { transform: rotate(8deg)  scale(1.05); opacity: 1; }
+  }
+
+  .loading-text {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* Error */
+  .state-error {
+    text-align: center;
+    padding: 5rem 2rem;
+    border: 1px solid var(--rule);
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--paper-2);
+  }
+
+  .state-error h2 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  .state-error p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+  }
+
+  .btn {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    padding: 0.85rem 2.25rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 2px;
+  }
+
+  .btn:hover { background: var(--green-2); }
+
+  /* Article */
+  .article {
+    animation: rise 0.6s cubic-bezier(.22,.68,0,1.15) both;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Kicker */
+  .a-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .kicker-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+  }
+
+  .kicker-text {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--green);
+  }
+
+  /* Headline */
+  .a-headline {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4.8vw, 3.4rem);
+    font-weight: 900;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 1.6rem;
+    max-width: 760px;
+  }
+
+  /* Stauner box — the heart */
+  .stauner-box {
+    max-width: 720px;
+    margin-bottom: 3rem;
+    background: var(--green-pale);
+    border-left: 5px solid var(--green);
+    padding: 2rem 2.25rem;
+    position: relative;
+  }
+
+  .stauner-label {
+    font-family: var(--sans);
+    font-size: 0.58rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stauner-label::before {
+    content: '✦';
+    font-size: 0.5rem;
+  }
+
+  .stauner-text {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.65;
+    color: var(--ink-2);
+  }
+
+  /* Body */
+  .a-body {
+    font-size: 1.05rem;
+    line-height: 1.92;
+    max-width: 720px;
+    color: var(--ink-3);
+  }
+
+  .a-body p { margin-bottom: 1.35em; }
+  .a-body p:last-child { margin-bottom: 0; }
+
+  /* Drop cap on first paragraph */
+  .a-body p:first-child::first-letter {
+    font-family: var(--serif);
+    font-size: 3.8rem;
+    font-weight: 900;
+    line-height: 0.8;
+    float: left;
+    margin-right: 0.1em;
+    margin-top: 0.05em;
+    color: var(--green);
+  }
+
+  /* Divider */
+  .divider {
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.75rem 0;
+  }
+
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .divider-mark {
+    font-family: var(--serif);
+    font-size: 0.8rem;
+    letter-spacing: 0.5em;
+    color: var(--rule);
+  }
+
+  /* Colophon */
+  .colophon {
+    max-width: 720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1.25rem;
+    border-top: 2px solid var(--green-pale);
+  }
+
+  .colophon-source {
+    font-family: var(--sans);
+    font-size: 0.62rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  .colophon-source strong {
+    color: var(--ink-3);
+    font-weight: 600;
+  }
+
+  .lang-btn {
+    font-family: var(--sans);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1.5px solid var(--green);
+    color: var(--green);
+    padding: 0.5rem 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+
+  .lang-btn:hover, .lang-btn.loading {
+    background: var(--green);
+    color: #fff;
+  }
+
+  /* Footer */
+  .site-footer {
+    background: var(--paper-3);
+    border-top: 1px solid var(--rule);
+  }
+
+  .footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink-3);
+    letter-spacing: -0.01em;
+  }
+
+  .footer-brand span { color: var(--green); font-style: italic; }
+
+  .footer-copy {
+    font-family: var(--sans);
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    .m-title { font-size: 2.6rem; }
+    .m-tagline { display: none; }
+    .a-headline { font-size: 1.8rem; }
+    .stauner-box { padding: 1.5rem; }
+    .footer-inner { flex-direction: column; text-align: center; }
+    .a-body p:first-child::first-letter { font-size: 2.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="m-top">
+      <span class="m-tag">✦ Hirnholz &mdash; tägliche Edition</span>
+      <span class="m-date-top" id="js-date-top"></span>
+    </div>
+    <div class="m-title-row">
+      <h1 class="m-title">Der tägliche <span class="m-title-accent">Stauner</span></h1>
+      <p class="m-tagline">Was wir über die Welt zu wissen glauben — und was wirklich stimmt.</p>
+    </div>
+  </div>
+</header>
+
+<div class="green-band">
+  <div class="green-band-inner">
+    <span class="band-motto">Jeden Morgen eine Erkenntnis &mdash; belegt, überraschend, ermutigend</span>
+    <span class="band-date" id="js-date-band"></span>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+  <div id="js-loading" class="state-loading">
+    <span class="loading-leaf">🌿</span>
+    <p class="loading-text">Der Stauner des Tages wird vorbereitet &hellip;</p>
+  </div>
+
+  <div id="js-error" class="state-error" style="display:none">
+    <h2>Heute keine Verbindung</h2>
+    <p>Der Stauner konnte nicht geladen werden. Bitte prüfe deinen API-Key in der Konfiguration oder versuche es gleich nochmal.</p>
+    <button class="btn" onclick="loadStory()">Erneut versuchen</button>
+  </div>
+
+  <div id="js-article" style="display:none"></div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-brand">Hirn<span>holz</span></span>
+    <span class="footer-copy">Jeden Morgen um 5 Uhr &mdash; <span id="js-year"></span></span>
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════
+   KONFIGURATION — hier alles anpassen
+═══════════════════════════════════════════════════════ */
+const CONFIG = {
+
+  // Dein Anthropic API Key — hier eintragen
+  apiKey: 'DEIN_API_KEY_HIER',
+
+  // Themengebiete — frei ergänzen oder entfernen
+  themen: [
+    'Ökologie und natürliche Systeme',
+    'Nachhaltige Wirtschaft und gesellschaftlicher Fortschritt',
+    'Menschliches Verhalten und Zusammenleben',
+    'Wissenschaftliche Entdeckungen der letzten Jahrzehnte',
+    'Globale Entwicklung und was sich wirklich verbessert hat',
+    'Forstwirtschaft, Boden und natürliche Kreisläufe',
+    'Innovationen die der Welt nützen',
+    'Faszinierende Tierarten und Ökosysteme',
+    'Wirtschaft und was Märkte wirklich bewirken',
+    'Astronomie und unser Platz im Universum',
+    'Bildung und wie Menschen wirklich lernen',
+    'Ernährung, Landwirtschaft und die Zukunft des Essens'
+  ],
+
+  // Referenzquellen — zur Orientierung für die KI
+  quellen: [
+    'peer-reviewte wissenschaftliche Studien',
+    'Our World in Data (ourworldindata.org)',
+    'Max-Planck-Institut und Fraunhofer-Institut',
+    'Nature, Science und Scientific American',
+    'JSTOR und akademische Publikationen',
+    'Hakai Magazine und Knowable Magazine',
+    'UN-Berichte und Weltbank-Daten'
+  ]
+
+};
+
+/* ═══════════════════════════════════════════════════════
+   PROMPT
+═══════════════════════════════════════════════════════ */
+function buildPrompt(thema, lang) {
+  const q = CONFIG.quellen.join(', ');
+  const langLine = lang === 'de'
+    ? 'Schreibe ausschließlich auf Deutsch.'
+    : 'Write exclusively in English.';
+
+  return `Du bist der Chefredakteur von "Der tägliche Stauner" — einem täglichen Wissenskanal im präzisen Geist von "Im Grunde Gut" von Rutger Bregman und "Factfulness" von Hans Rosling.
+
+Heutiges Thema: "${thema}"
+
+Deine Aufgabe:
+1. Beginne mit einer weit verbreiteten Annahme oder einem Missverständnis zu diesem Thema — etwas das die meisten Menschen glauben
+2. Zeige dann mit echten, belegten Fakten dass die Wirklichkeit nuancierter, überraschender oder ermutigendar ist
+3. Schließe mit dem großen Bild — warum das wichtig ist und was es über die Welt aussagt
+
+Tonalität: Ruhig, präzise, neugierig. Wie ein sehr guter Sachbuchautor. Nie moralisierend, nie kitschig positiv — sondern faktenbasiert faszinierend.
+Niemals: Krieg, Katastrophen, politische Konflikte, Identitätsdebatten, Empörungsthemen.
+Immer: Das Gefühl "Das wusste ich nicht — die Welt ist interessanter als ich dachte."
+
+Orientierungsquellen: ${q}
+
+${langLine}
+
+Antworte NUR mit diesem JSON (kein Markdown, keine Erklärungen):
+{
+  "kategorie": "Ein- oder Zwei-Wort-Kategorie",
+  "titel": "Prägnante, neugierig machende Überschrift — keine Frage",
+  "stauner": "Die Kernaussage in 2-3 Sätzen — die überraschende Erkenntnis, klar und fesselnd formuliert",
+  "absaetze": [
+    "Erster Absatz: Die verbreitete Annahme — was die meisten glauben und warum das verständlich ist",
+    "Zweiter Absatz: Was die Forschung wirklich zeigt — mit konkreten Zahlen, Beispielen, Belegen",
+    "Dritter Absatz: Das größere Bild — die Bedeutung, das bleibende Staunen"
+  ],
+  "quelle": "Konkrete Studie, Institut oder Publikation als Quellenhinweis"
+}`;
+}
+
+/* ═══════════════════════════════════════════════════════
+   LOGIK
+═══════════════════════════════════════════════════════ */
+function dayOfYear() {
+  const n = new Date();
+  return Math.floor((n - new Date(n.getFullYear(), 0, 0)) / 864e5);
+}
+
+function todayThema() {
+  return CONFIG.themen[dayOfYear() % CONFIG.themen.length];
+}
+
+function cacheKey(lang) {
+  const d = new Date();
+  return `stauner_${d.getFullYear()}_${d.getMonth()}_${d.getDate()}_${lang}`;
+}
+
+function getCached(lang) {
+  try { return JSON.parse(localStorage.getItem(cacheKey(lang))); }
+  catch { return null; }
+}
+
+function setCache(lang, data) {
+  try { localStorage.setItem(cacheKey(lang), JSON.stringify(data)); }
+  catch {}
+}
+
+async function fetchStory(lang) {
+  const cached = getCached(lang);
+  if (cached) return cached;
+
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': CONFIG.apiKey,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true'
+    },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 1000,
+      messages: [{ role: 'user', content: buildPrompt(todayThema(), lang) }]
+    })
+  });
+
+  if (!res.ok) throw new Error(`API ${res.status}`);
+  const data = await res.json();
+  const raw = (data.content?.[0]?.text || '').replace(/```json|```/g, '').trim();
+  const parsed = JSON.parse(raw);
+  setCache(lang, parsed);
+  return parsed;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RENDERING
+═══════════════════════════════════════════════════════ */
+let currentLang = 'de';
+
+function render(story, lang) {
+  const paras = (story.absaetze || []).map(p => `<p>${p}</p>`).join('');
+  const toggleLabel = lang === 'de' ? 'Read in English' : 'Auf Deutsch lesen';
+
+  const el = document.getElementById('js-article');
+  el.className = 'article';
+  el.innerHTML = `
+    <div class="a-kicker">
+      <span class="kicker-dot"></span>
+      <span class="kicker-text">${story.kategorie || ''}</span>
+    </div>
+    <h2 class="a-headline">${story.titel || ''}</h2>
+    <div class="stauner-box">
+      <div class="stauner-label">Das Staunen des Tages</div>
+      <p class="stauner-text">${story.stauner || ''}</p>
+    </div>
+    <div class="a-body">${paras}</div>
+    <div class="divider"><span class="divider-mark">✦ ✦ ✦</span></div>
+    <div class="colophon">
+      <span class="colophon-source"><strong>Quelle:</strong> ${story.quelle || ''}</span>
+      <button class="lang-btn" id="js-lang-btn" onclick="toggleLang()">${toggleLabel}</button>
+    </div>
+  `;
+}
+
+async function toggleLang() {
+  const btn = document.getElementById('js-lang-btn');
+  if (btn) { btn.classList.add('loading'); btn.textContent = '...'; btn.disabled = true; }
+
+  const next = currentLang === 'de' ? 'en' : 'de';
+  try {
+    const story = await fetchStory(next);
+    currentLang = next;
+    render(story, currentLang);
+    show('article');
+  } catch {
+    if (btn) { btn.classList.remove('loading'); btn.textContent = 'Fehler — erneut'; btn.disabled = false; }
+  }
+}
+
+async function loadStory() {
+  show('loading');
+  currentLang = 'de';
+  try {
+    const story = await fetchStory('de');
+    render(story, 'de');
+    show('article');
+  } catch (e) {
+    console.error(e);
+    show('error');
+  }
+}
+
+function show(id) {
+  ['loading','error','article'].forEach(k =>
+    document.getElementById(`js-${k}`).style.display = k === id ? 'block' : 'none'
+  );
+}
+
+/* ═══════════════════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════════════════ */
+const now = new Date();
+const dateStr = now.toLocaleDateString('de-DE', {
+  weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+});
+const dateShort = now.toLocaleDateString('de-DE', {
+  day: 'numeric', month: 'long', year: 'numeric'
+});
+
+document.getElementById('js-date-top').textContent = dateStr;
+document.getElementById('js-date-band').textContent = dateShort;
+document.getElementById('js-year').textContent = now.getFullYear();
+
+loadStory();
+</script>
+</body>
+</html>
