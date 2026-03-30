@@ -627,37 +627,15 @@ function setCache(key, data) {
 let currentStoryDE = null;
 
 async function getTodayStory() {
-  const cached = getCached(cacheKey('de'));
-  if (cached) return cached;
-
-  // Versuche Anthropic API wenn Key vorhanden
-  if (CONFIG.apiKey && CONFIG.apiKey.startsWith('sk-')) {
-    try {
-      const thema = CONFIG.themen[dayOfYear() % CONFIG.themen.length];
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-api-key': CONFIG.apiKey,
-          'anthropic-version': '2023-06-01',
-          'anthropic-dangerous-direct-browser-access': 'true'
-        },
-        body: JSON.stringify({
-          model: 'claude-haiku-4-5-20251001',
-          max_tokens: 1000,
-          messages: [{ role: 'user', content: `Du bist Chefredakteur von "Der tägliche Stauner" — im Geist von "Im Grunde Gut" und "Factfulness". Thema heute: "${thema}". Schreibe eine faszinierende, belegte Geschichte die mit einer verbreiteten Annahme beginnt und zeigt, dass die Wirklichkeit nuancierter ist. Ton: ruhig, präzise, nie kitschig. Niemals Krieg, Katastrophen oder politische Konflikte. Füge außerdem eine kurze Reflexionsfrage hinzu — eine einzige, offene Frage die den Leser einlädt, die Erkenntnis auf seinen eigenen Alltag zu beziehen. Die Frage soll neugierig machen, nicht belehren. Antworte NUR mit diesem JSON: {"kategorie":"...","titel":"...","stauner":"2-3 Sätze","absaetze":["...","...","..."],"frage":"...","quelle":"..."}`}]
-        })
-      });
-      if (res.ok) {
-        const data = await res.json();
-        const raw = (data.content?.[0]?.text || '').replace(/```json|```/g, '').trim();
-        const story = JSON.parse(raw);
-        setCache(cacheKey('de'), story);
-        return story;
-      }
-    } catch (e) {
-      console.warn('API nicht verfügbar, nutze eingebettete Geschichte');
+  // Lade täglich generierte story.json (erstellt durch GitHub Action)
+  try {
+    const res = await fetch('story.json?v=' + new Date().toISOString().slice(0,10));
+    if (res.ok) {
+      const story = await res.json();
+      if (story && story.titel) return story;
     }
+  } catch (e) {
+    console.warn('story.json nicht verfügbar, nutze eingebettete Geschichte');
   }
 
   // Fallback: eingebettete kuratierte Geschichte
