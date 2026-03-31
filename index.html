@@ -58,6 +58,21 @@
   .green-band-inner{max-width:var(--max-w);margin:0 auto;padding:0 var(--pad-x);display:flex;justify-content:space-between;align-items:center;gap:var(--space-s);flex-wrap:wrap}
   .band-motto{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.85)}
   .band-date{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);color:rgba(255,255,255,0.6);letter-spacing:.08em}
+  /* ── Sammlung Menü ── */
+  .nav-menu{position:relative;display:inline-block}
+  .nav-btn{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.15em;text-transform:uppercase;background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.85);padding:.35rem .9rem;cursor:pointer;transition:all .2s;border-radius:2px;display:flex;align-items:center;gap:.4rem}
+  .nav-btn:hover{background:rgba(255,255,255,0.15)}
+  .nav-arrow{font-size:.5rem;transition:transform .2s;display:inline-block}
+  .nav-btn.open .nav-arrow{transform:rotate(180deg)}
+  .nav-dropdown{display:none;position:absolute;top:calc(100% + .5rem);right:0;background:var(--ink);border:1px solid rgba(255,255,255,0.1);min-width:200px;z-index:50;animation:dropIn .15s ease}
+  .nav-dropdown.open{display:block}
+  @keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+  .nav-dropdown-header{font-family:var(--sans);font-size:clamp(.5rem,.7vw,.58rem);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:.75rem 1rem .4rem}
+  .nav-dropdown a{display:block;font-family:var(--sans);font-size:clamp(.6rem,.9vw,.7rem);color:rgba(255,255,255,0.75);text-decoration:none;padding:.5rem 1rem;transition:all .15s;letter-spacing:.05em}
+  .nav-dropdown a:hover{background:rgba(255,255,255,0.08);color:#fff}
+  .nav-dropdown-divider{height:1px;background:rgba(255,255,255,0.08);margin:.25rem 0}
+  .nav-dropdown-all{color:#52b788 !important;font-weight:600}
+
 
   /* ── Main container ── */
   .main{max-width:var(--max-w);margin:0 auto;padding:var(--space-l) var(--pad-x) var(--space-xl)}
@@ -209,7 +224,20 @@
 <div class="green-band">
   <div class="green-band-inner">
     <span class="band-motto">Jeden Morgen eine Erkenntnis — belegt, überraschend, ermutigend</span>
-    <span class="band-date" id="js-date-band"></span>
+    <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+      <span class="band-date" id="js-date-band"></span>
+      <div class="nav-menu">
+        <button class="nav-btn" id="js-nav-btn" onclick="toggleNav()">
+          Die Sammlung <span class="nav-arrow">▼</span>
+        </button>
+        <div class="nav-dropdown" id="js-nav-dropdown">
+          <div class="nav-dropdown-header">Nach Kategorie</div>
+          <div id="js-nav-categories"><a href="sammlung.html">Alle Geschichten laden…</a></div>
+          <div class="nav-dropdown-divider"></div>
+          <a href="sammlung.html" class="nav-dropdown-all">✦ Gesamte Sammlung →</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -690,6 +718,41 @@ function render(story) {
     </div>
   `;
 }
+
+
+/* ── Navigation Menü ── */
+function toggleNav() {
+  const btn = document.getElementById('js-nav-btn');
+  const dropdown = document.getElementById('js-nav-dropdown');
+  btn.classList.toggle('open');
+  dropdown.classList.toggle('open');
+}
+
+// Schließe bei Klick außerhalb
+document.addEventListener('click', e => {
+  if (!e.target.closest('.nav-menu')) {
+    document.getElementById('js-nav-btn')?.classList.remove('open');
+    document.getElementById('js-nav-dropdown')?.classList.remove('open');
+  }
+});
+
+// Lade Kategorien aus sammlung.json
+async function loadNavCategories() {
+  try {
+    const res = await fetch('sammlung.json?v=' + new Date().toISOString().slice(0,10));
+    if (!res.ok) return;
+    const stories = await res.json();
+    if (!stories?.length) return;
+
+    const cats = [...new Set(stories.map(s => s.kategorie).filter(Boolean))].sort();
+    const container = document.getElementById('js-nav-categories');
+    container.innerHTML = cats.map(cat =>
+      `<a href="sammlung.html#${encodeURIComponent(cat)}">${cat} <span style="opacity:.4;font-size:.85em">(${stories.filter(s=>s.kategorie===cat).length})</span></a>`
+    ).join('');
+  } catch {}
+}
+
+loadNavCategories();
 
 async function loadStory() {
   show('loading');
