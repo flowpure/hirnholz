@@ -1,14 +1,14 @@
 {
-  "kategorie": "Meeresbiologie",
-  "titel": "Warum Fische nicht stumm sind – Die verborgene Soundscape der Ozeane",
-  "stauner": "Viele Menschen denken, dass Fische völlig lautlos sind. Tatsächlich produzieren sie ständig Geräusche – von Schnappern über Grunzen bis zu ultrasonischen Klicks – und nutzen Schall zur Navigation, Kommunikation und Jagd.",
+  "kategorie": "Neurologie",
+  "titel": "Das Mythos-Gedächtnis: Warum wir falsche Erinnerungen als real erleben",
+  "stauner": "Wir glauben, unsere Erinnerungen seien wie Videoaufnahmen unseres Lebens – doch unser Gehirn rekonstruiert sie jedes Mal aufs Neue. Dabei können wir uns an Dinge erinnern, die nie passiert sind, mit derselben neurologischen Intensität wie an echte Ereignisse.",
   "absaetze": [
-    "Die weit verbreitete Vorstellung des 'stummen Fisches' entstand hauptsächlich, weil der menschliche Gehörsinn unter Wasser sehr begrenzt ist. Ohne spezialisierte Ausrüstung können wir die meisten Unterwassergeräusche nicht hören. Doch unter der Oberfläche herrscht ein faszinierendes akustisches Orchester: Grunzende Grundeln, schnappende Makrelen, zirpende Zahnkarpfen und sogar singende Wale bilden komplexe Soundscapes.",
-    "Forscher des Scripps Institution of Oceanography haben dokumentiert, dass Korallenriffgebiete mit intakten Fischbeständen zwei- bis dreimal lauter sind als Riffe, deren Fischpopulationen dezimiert wurden. Diese Geräusche entstehen durch Bewegungen beim Fressen, durch Kammerventilation und vor allem durch spezialisierte Lauterzeuger wie Schallenrauschmuskeln neben der Schwimmblase.",
-    "Besonders beeindruckend ist die Funktion dieser Laute: Sie dienen nicht nur der Partnersuche, sondern auch der Orientierung in Dunkelheit und Trübheit, der Warnung vor Raubtieren und der Koordination von Schwarmverhalten. Larven von Korallen-Fischen orientieren sich beim Einzug ins Riff sogar anhand von artspezifischen Geräuschen – sie 'hören' buchstäblich ihr Zuhause."
+    "Die verbreitete Annahme lautet: Unser Gedächtnis funktioniert wie ein digitales Speichermedium – wir kodieren Erlebnisse ab, lagern sie ein und rufen sie später ab. Diese Metapher ist so intuitiv, dass sie sich fest in unserer Kultur verankert hat. Doch die moderne Neurowissenschaft zeigt ein völlig anderes Bild: Jedes Mal, wenn wir uns an etwas erinnern, rekonstruiert unser Gehirn die Erinnerung aktiv neu, dabei können sich Details verändern, Informationen hinzukommen oder verschwinden.",
+    "Forscher der University of California haben 2021 nachgewiesen, dass das menschliche Gehirn bei der Erinnerungsabruf die gleichen neuronalen Netzwerke aktiviert wie beim ursprünglichen Ereignis – aber mit Unterschieden. Diese Rekonstruktion ist nicht fehlerhaft im klassischen Sinne; sie ist adaptiv. Das Gehirn integriert neue Informationen, emotionale Kontexte und sogar Suggestionskraft von außen in die Erinnerung ein. Besonders faszinierend: Vollständig erfundene Erinnerungen (sogenannte 'false memories') aktivieren die gleichen Hirnregionen wie authentische Erinnerungen und fühlen sich subjektiv identisch real an.",
+    "Dieser Mechanismus hatte evolutionär einen Vorteil: Statt statische Videoaufnahmen zu lagern, konnte sich unser Gehirn flexibel an verändernde Umwelten anpassen und Lernprozesse in bestehende Wissensschemata integrieren. Für modernes Leben bedeutet das allerdings auch, dass Zeugenaussagen weniger verlässlich sind als lange angenommen und dass wir unseren Erinnerungen nicht blind vertrauen sollten – ohne dass dies ein Zeichen von Gedächtnisverlust wäre."
   ],
-  "schon_gewusst": "Der Lärm von Schiffsverkehr hat die Unterwasserlautstärke in den letzten 100 Jahren um etwa das Dreifache erhöht, was für lärmempfindliche Arten wie Meeressäuger zu chronischem Stress führt.",
-  "quelle": "Scripps Institution of Oceanography – MarineLife Research Group",
-  "quelle_url": "https://scripps.ucsd.edu/research/",
-  "datum": "2026-03-31"
+  "schon_gewusst": "In Studien konnten Psychologen Menschen erfolgreich dazu bringen, sich an Ereignisse zu erinnern, die unter kontrollierten Bedingungen definitiv nicht stattgefunden haben – etwa das Reiten auf einem Elefanten im Freizeitpark. Die 'Erinnerungen' waren neurologisch messbar genauso stabil wie echte.",
+  "quelle": "University of California, Irvine – Memory and Neuroscience Laboratory",
+  "quelle_url": "https://neuroscience.uci.edu/labs/memory-lab",
+  "datum": "2026-04-01"
 }
