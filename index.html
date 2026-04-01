@@ -732,7 +732,7 @@ let currentStoryDE = null;
 async function getTodayStory() {
   // Lade täglich generierte story.json (erstellt durch GitHub Action)
   try {
-    const res = await fetch('story.json?v=' + new Date().toISOString().slice(0,10));
+    const res = await fetch('story.json?v=' + Date.now());
     if (res.ok) {
       const story = await res.json();
       if (story && story.titel) return story;
