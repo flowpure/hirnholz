@@ -61,11 +61,11 @@
   .masthead-inner{max-width:var(--max-w);margin:0 auto;padding:var(--space-m) var(--pad-x) var(--space-s)}
   .m-top{display:flex;justify-content:space-between;align-items:center;gap:var(--space-s);margin-bottom:var(--space-s);padding-bottom:var(--space-xs);border-bottom:1px solid rgba(255,255,255,0.12);flex-wrap:wrap}
   .m-tag{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.7rem);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#52b788}
-  .m-date-top{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.7rem);letter-spacing:.1em;color:rgba(255,255,255,0.4)}
+  .m-date-top{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.7rem);letter-spacing:.1em;color:rgba(255,255,255,0.85)}
   .m-title-row{display:flex;align-items:baseline;gap:var(--space-s);flex-wrap:wrap}
   .m-title{font-family:var(--serif);font-size:clamp(2rem,7vw,5.8rem);font-weight:900;line-height:.9;letter-spacing:-.02em;color:var(--paper);flex-shrink:0}
   .m-title-accent{color:#2e8b57;font-style:italic}
-  .m-tagline{font-family:var(--body);font-style:italic;font-size:clamp(.8rem,1.2vw,1rem);color:rgba(255,255,255,0.45);line-height:1.4;max-width:280px;align-self:flex-end;padding-bottom:.2rem}
+  .m-tagline{font-family:var(--body);font-style:italic;font-size:clamp(.8rem,1.2vw,1rem);color:rgba(255,255,255,0.8);line-height:1.4;max-width:280px;align-self:flex-end;padding-bottom:.2rem}
 
   /* ── Green band ── */
   .green-band{background:#2e8b57;padding:clamp(.35rem,.8vw,.6rem) 0}
@@ -256,10 +256,13 @@
 </head>
 <body>
 
+<!-- API Key für Übersetzung: ersetze DEIN_KEY_HIER mit deinem Anthropic API Key -->
+<span id="js-api-key" data-key="DEIN_KEY_HIER" style="display:none"></span>
+
 <header class="masthead">
   <div class="masthead-inner">
     <div class="m-top">
-      <span class="m-tag" id="js-m-tag">✦ Hirnholz — tägliche Edition</span>
+      <a href="/" class="m-tag" id="js-m-tag" style="text-decoration:none;cursor:pointer;">✦ Hirnholz — tägliche Edition</a>
       <span class="m-date-top" id="js-date-top"></span>
       <div class="switches">
         <button class="switch-btn" id="js-theme-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
@@ -277,7 +280,7 @@
 
 <div class="green-band">
   <div class="green-band-inner">
-    <span class="band-motto" id="js-band-motto">Jeden Morgen eine Erkenntnis — belegt, überraschend, ermutigend</span>
+    <span class="band-motto" id="js-band-motto">Jeden Morgen um 5:00 Uhr eine Erkenntnis — bereichernd, begeisternd und wissenschaftlich belegt.</span>
     <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
       <span class="band-date" id="js-date-band"></span>
       <div class="nav-menu">
@@ -822,11 +825,12 @@ const TRANSLATIONS = {
     title: 'Der tägliche',
     titleAccent: 'Stauner',
     tagline: 'Was wir über die Welt zu wissen glauben — und was wirklich stimmt.',
-    motto: 'Jeden Morgen eine Erkenntnis — belegt, überraschend, ermutigend',
+    motto: 'Jeden Morgen um 5:00 Uhr eine Erkenntnis — bereichernd, begeisternd und wissenschaftlich belegt.',
     staunerLabel: 'Das Staunen des Tages',
     schonLabel: 'Schon gewusst?',
     quelleLabel: 'Quelle',
     sammlung: 'Die Sammlung',
+    beitraege: 'Beiträge',
     sammlungHeader: 'Nach Kategorie',
     sammlungAll: '✦ Gesamte Sammlung →',
     footerMotto: 'Jeden Morgen um 5 Uhr',
@@ -841,11 +845,12 @@ const TRANSLATIONS = {
     title: 'The daily',
     titleAccent: 'Wonder',
     tagline: 'What we think we know about the world — and what is really true.',
-    motto: 'Every morning one insight — evidence-based, surprising, encouraging',
+    motto: 'Every morning at 5:00 AM — enriching, inspiring and scientifically grounded.',
     staunerLabel: 'The Wonder of the Day',
     schonLabel: 'Did you know?',
     quelleLabel: 'Source',
     sammlung: 'The Collection',
+    beitraege: 'Stories',
     sammlungHeader: 'By Category',
     sammlungAll: '✦ Full Collection →',
     footerMotto: 'Every morning at 5 AM',
@@ -868,11 +873,14 @@ async function translateStory(story, targetLang) {
     try { return JSON.parse(cached); } catch {}
   }
 
+  const ANTHROPIC_KEY = document.getElementById('js-api-key')?.dataset?.key || '';
   const response = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'anthropic-version': '2023-06-01'
+      'anthropic-version': '2023-06-01',
+      'x-api-key': ANTHROPIC_KEY,
+      'anthropic-dangerous-direct-browser-access': 'true'
     },
     body: JSON.stringify({
       model: 'claude-haiku-4-5-20251001',
