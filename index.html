@@ -77,12 +77,12 @@
   .nav-btn:hover{background:rgba(255,255,255,0.15)}
   .nav-arrow{font-size:.5rem;transition:transform .2s;display:inline-block}
   .nav-btn.open .nav-arrow{transform:rotate(180deg)}
-  .nav-dropdown{display:none;position:absolute;top:calc(100% + .5rem);right:0;background:var(--ink);border:1px solid rgba(255,255,255,0.1);min-width:200px;z-index:50;animation:dropIn .15s ease}
+  .nav-dropdown{display:none;position:absolute;top:calc(100% + .5rem);right:0;background:#1a1a14;border:1px solid rgba(255,255,255,0.15);min-width:220px;z-index:50;animation:dropIn .15s ease;box-shadow:0 4px 20px rgba(0,0,0,0.3)}
   .nav-dropdown.open{display:block}
   @keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-  .nav-dropdown-header{font-family:var(--sans);font-size:clamp(.5rem,.7vw,.58rem);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:.75rem 1rem .4rem}
-  .nav-dropdown a{display:block;font-family:var(--sans);font-size:clamp(.6rem,.9vw,.7rem);color:rgba(255,255,255,0.75);text-decoration:none;padding:.5rem 1rem;transition:all .15s;letter-spacing:.05em}
-  .nav-dropdown a:hover{background:rgba(255,255,255,0.08);color:#fff}
+  .nav-dropdown-header{font-family:var(--sans);font-size:clamp(.5rem,.7vw,.58rem);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.6);padding:.75rem 1rem .4rem}
+  .nav-dropdown a{display:block;font-family:var(--sans);font-size:clamp(.6rem,.9vw,.7rem);color:#f5f0e4;text-decoration:none;padding:.5rem 1rem;transition:all .15s;letter-spacing:.05em}
+  .nav-dropdown a:hover{background:rgba(255,255,255,0.12);color:#fff}
   .nav-dropdown-divider{height:1px;background:rgba(255,255,255,0.08);margin:.25rem 0}
   .nav-dropdown-all{color:#52b788 !important;font-weight:600}
 
@@ -845,13 +845,60 @@ const TRANSLATIONS = {
     sammlungHeader: 'By Category',
     sammlungAll: '✦ Full Collection →',
     footerMotto: 'Every morning at 5 AM',
-    loadingText: 'Today's wonder is being prepared …',
+    loadingText: "Today's wonder is being prepared …",
     errorTitle: 'No connection today',
-    errorText: 'The wonder could not be loaded. Please try again in a moment.',
+    errorText: "The wonder could not be loaded. Please try again in a moment.",
     errorBtn: 'Try again',
     sammlung_url: 'sammlung.html'
   }
 };
+
+
+/* ═══════════════════════════════════════════════
+   CLAUDE API ÜBERSETZUNG
+═══════════════════════════════════════════════ */
+async function translateStory(story, targetLang) {
+  const cacheKey = `trans_${story.datum}_${targetLang}`;
+  const cached = localStorage.getItem(cacheKey);
+  if (cached) {
+    try { return JSON.parse(cached); } catch {}
+  }
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'anthropic-version': '2023-06-01'
+    },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5-20251001',
+      max_tokens: 1200,
+      messages: [{
+        role: 'user',
+        content: `Translate this JSON from German to English. Keep the exact same JSON structure and keys. Only translate the values. Return ONLY the JSON, no markdown.
+
+${JSON.stringify({
+  kategorie: story.kategorie,
+  titel: story.titel,
+  stauner: story.stauner,
+  absaetze: story.absaetze,
+  schon_gewusst: story.schon_gewusst || '',
+  quelle: story.quelle
+})}`
+      }]
+    })
+  });
+
+  if (!response.ok) throw new Error('Translation failed');
+  const data = await response.json();
+  const raw = (data.content?.[0]?.text || '').replace(/```json|```/g, '').trim();
+  const translated = JSON.parse(raw);
+  // Keep original URLs and datum
+  translated.datum = story.datum;
+  translated.quelle_url = story.quelle_url;
+  localStorage.setItem(cacheKey, JSON.stringify(translated));
+  return translated;
+}
 
 let currentTheme = localStorage.getItem('stauner-theme') || 'auto';
 let currentLang = localStorage.getItem('stauner-lang') || 'de';
@@ -916,9 +963,31 @@ function applyLang(lang) {
 }
 
 async function toggleLang() {
-  currentLang = currentLang === 'de' ? 'en' : 'de';
-  localStorage.setItem('stauner-lang', currentLang);
-  applyLang(currentLang);
+  const next = currentLang === 'de' ? 'en' : 'de';
+  const btn = document.getElementById('js-lang-btn');
+  if (btn) { btn.style.opacity = '0.5'; btn.style.pointerEvents = 'none'; }
+
+  try {
+    if (next === 'en' && currentStoryDE) {
+      const translated = await translateStory(currentStoryDE, 'en');
+      currentLang = next;
+      localStorage.setItem('stauner-lang', currentLang);
+      applyLang(currentLang);
+      renderInLang(translated, 'en');
+    } else {
+      currentLang = next;
+      localStorage.setItem('stauner-lang', currentLang);
+      applyLang(currentLang);
+      if (currentStoryDE) renderInLang(currentStoryDE, 'de');
+    }
+  } catch(e) {
+    console.warn('Übersetzung fehlgeschlagen, zeige Deutsch:', e);
+    currentLang = 'de';
+    applyLang('de');
+    if (currentStoryDE) renderInLang(currentStoryDE, 'de');
+  } finally {
+    if (btn) { btn.style.opacity = ''; btn.style.pointerEvents = ''; }
+  }
 }
 
 function renderInLang(story, lang) {
