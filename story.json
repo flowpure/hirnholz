@@ -1,14 +1,14 @@
 {
-  "kategorie": "Neurologie",
-  "titel": "Die Illusion der Multitasking-Meister: Warum unser Gehirn tatsächlich nur hintereinander arbeitet",
-  "stauner": "Wir glauben, mehrere Dinge gleichzeitig zu tun – doch unser Gehirn wechselt nur blitzschnell zwischen Aufgaben hin und her. Diese ständigen Schaltmomente kosten uns bis zu 40% unserer kognitiven Leistung, und besonders komplexe Aufgaben leiden massiv darunter.",
+  "kategorie": "Meeresbiologie",
+  "titel": "Warum Fische nicht stumm sind – Das verborgene Konzert der Ozeane",
+  "stauner": "Wir stellen uns Fische als stille Bewohner vor. Doch unter Wasser herrscht ein regelrechtes Konzert aus Klicks, Grunzlauten und Knallgeräuschen – und Fische hören nicht nur, sie nutzen Schall zur Kommunikation, Navigation und Jagd.",
   "absaetze": [
-    "Die verbreitete Annahme ist hartnäckig: Menschen mit einem trainierten Gehirn können mehrere komplexe Aufgaben gleichzeitig bewältigen. Millionen von Produktivitätsratgebern versprechen, dass Multitasking trainierbar ist. Doch Neurowissenschaftler haben längst herausgefunden, dass dies eine neurologische Unmöglichkeit darstellt – nicht eine Fähigkeitsfrage.",
-    "Der präfrontale Kortex, unser Zentrum für Aufmerksamkeit und Planung, kann sich immer nur einer anspruchsvollen Aufgabe vollständig widmen. Was wir als Multitasking empfinden, ist ein rasantes Umschalten zwischen Aufgaben. Eine bahnbrechende Studie der University of Michigan zeigte: Jeder Wechsel verursacht messbare Verzögerungen im Gehirn. Bei zwei ähnlich komplexen Aufgaben verlieren wir etwa 40% unserer Effizienz – nicht wegen mangelnder Konzentration, sondern weil das Gehirn neu kalibrieren muss.",
-    "Besonders interessant: Routineaufgaben wie Spazierengehen während eines Telefonats funktionieren tatsächlich, weil die automatisierte motorische Kontrolle aus dem Zerebellum läuft, nicht aus dem präfrontalen Kortex. Sobald aber beide Aufgaben Aufmerksamkeit brauchen, sinkt die Leistung dramatisch. Führungskräfte, die während eines Meetings E-Mails beantworten, verlieren nachweislich 23% der Informationen aus dem Gespräch – eine neurobiologische Tatsache, keine Disziplinlosigkeit."
+    "Die verbreitete Annahme, dass Fische stumm sind, stammt aus dem menschlichen Bias: Wir nehmen wahr, was wir hören. Doch Fische produzieren kontinuierlich Laute. Der Doktorfisch brummt beim Fressen, Seepferdchen schnalzen zur Kommunikation, und der Pistolenkrebs erzeugt Explosionen von bis zu 210 Dezibel durch das Schnellen seiner übergroßen Schere – laut genug, um Beute zu betäuben.",
+    "Forscher haben mittlerweile über 800 Fischarten katalogisiert, die aktiv Laute produzieren. Das Gehör von Fischen funktioniert dabei anders als bei Menschen: Ihre Schwimmblase oder spezielle Knochenstrukturen leiten Schallwellen direkt ans Innenohr. Das macht sie teilweise sensibler für bestimmte Frequenzen als menschliche Ohren – sie können Frequenzen von unter 10 Hertz wahrnehmen.",
+    "Die akustische Umwelt der Ozeane ist so reichhaltig, dass Meeresbiologen von einem 'Unterwasser-Soundscape' sprechen. Dieser natürliche Klang hilft Fischlarven, Korallenriffe zu finden und zu besiedeln. Künstliche Lärmverschmutzung durch Schiffe stört dieses System erheblich und desorientiert ganze Populationen – ein Zeichen, wie zentral Akustik für das Leben im Meer ist."
   ],
-  "schon_gewusst": "Hochleistungssportler nutzen diese Erkenntnisse bewusst: Sie trainieren bewusste Aufmerksamkeitswechsel statt echter Parallelverarbeitung. Ein Tennisspieler konzentriert sich sequenziell auf Ballflug, dann Beinposition, dann Schlag – nicht auf alle gleichzeitig.",
-  "quelle": "University of Michigan, Human-Computer Interaction Institute",
-  "quelle_url": "https://www.umich.edu/news-releases/multitasking-takes-its-toll/",
+  "schon_gewusst": "Der Lärm von Frachtschiffen hat sich in den letzten 50 Jahren verdoppelt, was Meeressäuger und Fische zwingt, lauter zu rufen – ein Phänomen, das 'Lombard-Effekt' genannt wird und Energie kostet, die sie zum Fressen und Fortpflanzen bräuchten.",
+  "quelle": "Popper et al., State of the science on fish hearing and the impacts of anthropogenic ocean noise on fishes, National Center for Biotechnology Information",
+  "quelle_url": "https://pubmed.ncbi.nlm.nih.gov/34299905/",
   "datum": "2026-04-01"
 }
