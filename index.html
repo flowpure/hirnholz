@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -15,6 +16,19 @@
     --serif:'Playfair Display',Georgia,serif;
     --body:'Source Serif 4',Georgia,serif;
     --sans:'DM Sans',system-ui,sans-serif;
+  }
+  /* Theme & Lang overrides */
+  [data-theme="dark"]{
+    --paper:#1c1c14;--paper-2:#242418;--paper-3:#2c2c20;
+    --ink:#f5f0e4;--ink-2:#ddd8c8;--ink-3:#b8b4a0;
+    --muted:#888070;--rule:#3a3a2c;
+    --green:#2e8b57;--green-2:#256f47;--green-3:#52b788;--green-pale:#1a3d2b;
+  }
+  [data-theme="light"]{
+    --paper:#faf7f0;--paper-2:#f0ece0;--paper-3:#e8e2d0;
+    --ink:#1a1a14;--ink-2:#2e2e24;--ink-3:#4a4a3a;
+    --muted:#787060;--rule:#ccc8b8;
+    --green:#2e8b57;--green-2:#256f47;--green-3:#52b788;--green-pale:#d4edda;
   }
   @media(prefers-color-scheme:dark){
     :root{
@@ -36,205 +50,246 @@
     --max-text: 720px;
   }
 
-  *{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box}
 
-  html{font-size:clamp(15px, 1.4vw, 18px)}
+html{font-size:clamp(15px, 1.4vw, 18px)}
 
-  body{background:var(--paper);color:var(--ink);font-family:var(--body);min-height:100vh}
+body{background:var(–paper);color:var(–ink);font-family:var(–body);min-height:100vh}
 
-  /* ── Masthead ── */
-  .masthead{background:var(--ink)}
-  .masthead-inner{max-width:var(--max-w);margin:0 auto;padding:var(--space-m) var(--pad-x) var(--space-s)}
-  .m-top{display:flex;justify-content:space-between;align-items:center;gap:var(--space-s);margin-bottom:var(--space-s);padding-bottom:var(--space-xs);border-bottom:1px solid rgba(255,255,255,0.12);flex-wrap:wrap}
-  .m-tag{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.7rem);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#52b788}
-  .m-date-top{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.7rem);letter-spacing:.1em;color:rgba(255,255,255,0.4)}
-  .m-title-row{display:flex;align-items:baseline;gap:var(--space-s);flex-wrap:wrap}
-  .m-title{font-family:var(--serif);font-size:clamp(2rem,7vw,5.8rem);font-weight:900;line-height:.9;letter-spacing:-.02em;color:var(--paper);flex-shrink:0}
-  .m-title-accent{color:#2e8b57;font-style:italic}
-  .m-tagline{font-family:var(--body);font-style:italic;font-size:clamp(.8rem,1.2vw,1rem);color:rgba(255,255,255,0.45);line-height:1.4;max-width:280px;align-self:flex-end;padding-bottom:.2rem}
+/* ── Masthead ── */
+.masthead{background:var(–ink)}
+.masthead-inner{max-width:var(–max-w);margin:0 auto;padding:var(–space-m) var(–pad-x) var(–space-s)}
+.m-top{display:flex;justify-content:space-between;align-items:center;gap:var(–space-s);margin-bottom:var(–space-s);padding-bottom:var(–space-xs);border-bottom:1px solid rgba(255,255,255,0.12);flex-wrap:wrap}
+.m-tag{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.7rem);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#52b788}
+.m-date-top{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.7rem);letter-spacing:.1em;color:rgba(255,255,255,0.4)}
+.m-title-row{display:flex;align-items:baseline;gap:var(–space-s);flex-wrap:wrap}
+.m-title{font-family:var(–serif);font-size:clamp(2rem,7vw,5.8rem);font-weight:900;line-height:.9;letter-spacing:-.02em;color:var(–paper);flex-shrink:0}
+.m-title-accent{color:#2e8b57;font-style:italic}
+.m-tagline{font-family:var(–body);font-style:italic;font-size:clamp(.8rem,1.2vw,1rem);color:rgba(255,255,255,0.45);line-height:1.4;max-width:280px;align-self:flex-end;padding-bottom:.2rem}
 
-  /* ── Green band ── */
-  .green-band{background:#2e8b57;padding:clamp(.35rem,.8vw,.6rem) 0}
-  .green-band-inner{max-width:var(--max-w);margin:0 auto;padding:0 var(--pad-x);display:flex;justify-content:space-between;align-items:center;gap:var(--space-s);flex-wrap:wrap}
-  .band-motto{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.85)}
-  .band-date{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);color:rgba(255,255,255,0.6);letter-spacing:.08em}
-  /* ── Sammlung Menü ── */
-  .nav-menu{position:relative;display:inline-block}
-  .nav-btn{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.15em;text-transform:uppercase;background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.85);padding:.35rem .9rem;cursor:pointer;transition:all .2s;border-radius:2px;display:flex;align-items:center;gap:.4rem}
-  .nav-btn:hover{background:rgba(255,255,255,0.15)}
-  .nav-arrow{font-size:.5rem;transition:transform .2s;display:inline-block}
-  .nav-btn.open .nav-arrow{transform:rotate(180deg)}
-  .nav-dropdown{display:none;position:absolute;top:calc(100% + .5rem);right:0;background:var(--ink);border:1px solid rgba(255,255,255,0.1);min-width:200px;z-index:50;animation:dropIn .15s ease}
-  .nav-dropdown.open{display:block}
-  @keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-  .nav-dropdown-header{font-family:var(--sans);font-size:clamp(.5rem,.7vw,.58rem);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:.75rem 1rem .4rem}
-  .nav-dropdown a{display:block;font-family:var(--sans);font-size:clamp(.6rem,.9vw,.7rem);color:rgba(255,255,255,0.75);text-decoration:none;padding:.5rem 1rem;transition:all .15s;letter-spacing:.05em}
-  .nav-dropdown a:hover{background:rgba(255,255,255,0.08);color:#fff}
-  .nav-dropdown-divider{height:1px;background:rgba(255,255,255,0.08);margin:.25rem 0}
-  .nav-dropdown-all{color:#52b788 !important;font-weight:600}
+/* ── Green band ── */
+.green-band{background:#2e8b57;padding:clamp(.35rem,.8vw,.6rem) 0}
+.green-band-inner{max-width:var(–max-w);margin:0 auto;padding:0 var(–pad-x);display:flex;justify-content:space-between;align-items:center;gap:var(–space-s);flex-wrap:wrap}
+.band-motto{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.85)}
+.band-date{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.65rem);color:rgba(255,255,255,0.6);letter-spacing:.08em}
+/* ── Sammlung Menü ── */
+.nav-menu{position:relative;display:inline-block}
+.nav-btn{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.15em;text-transform:uppercase;background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.85);padding:.35rem .9rem;cursor:pointer;transition:all .2s;border-radius:2px;display:flex;align-items:center;gap:.4rem}
+.nav-btn:hover{background:rgba(255,255,255,0.15)}
+.nav-arrow{font-size:.5rem;transition:transform .2s;display:inline-block}
+.nav-btn.open .nav-arrow{transform:rotate(180deg)}
+.nav-dropdown{display:none;position:absolute;top:calc(100% + .5rem);right:0;background:var(–ink);border:1px solid rgba(255,255,255,0.1);min-width:200px;z-index:50;animation:dropIn .15s ease}
+.nav-dropdown.open{display:block}
+@keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.nav-dropdown-header{font-family:var(–sans);font-size:clamp(.5rem,.7vw,.58rem);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);padding:.75rem 1rem .4rem}
+.nav-dropdown a{display:block;font-family:var(–sans);font-size:clamp(.6rem,.9vw,.7rem);color:rgba(255,255,255,0.75);text-decoration:none;padding:.5rem 1rem;transition:all .15s;letter-spacing:.05em}
+.nav-dropdown a:hover{background:rgba(255,255,255,0.08);color:#fff}
+.nav-dropdown-divider{height:1px;background:rgba(255,255,255,0.08);margin:.25rem 0}
+.nav-dropdown-all{color:#52b788 !important;font-weight:600}
 
+/* ── Theme & Lang Switches ── */
+.switches{display:flex;align-items:center;gap:.5rem}
+.switch-btn{
+font-family:var(–sans);
+font-size:.75rem;
+background:rgba(255,255,255,0.12);
+border:1px solid rgba(255,255,255,0.2);
+color:rgba(255,255,255,0.85);
+width:2rem;height:2rem;
+border-radius:50%;
+cursor:pointer;
+display:flex;align-items:center;justify-content:center;
+transition:all .2s;
+flex-shrink:0;
+}
+.switch-btn:hover{background:rgba(255,255,255,0.25);border-color:rgba(255,255,255,0.5)}
+.switch-btn.active{background:#2e8b57;border-color:#2e8b57;color:#fff}
+.lang-switch-btn{
+font-family:var(–sans);
+font-size:clamp(.5rem,.7vw,.6rem);
+font-weight:600;
+letter-spacing:.1em;
+background:rgba(255,255,255,0.12);
+border:1px solid rgba(255,255,255,0.2);
+color:rgba(255,255,255,0.85);
+padding:.3rem .6rem;
+border-radius:2px;
+cursor:pointer;
+display:flex;align-items:center;gap:.3rem;
+transition:all .2s;
+white-space:nowrap;
+}
+.lang-switch-btn:hover{background:rgba(255,255,255,0.25)}
+.lang-switch-btn.active{background:#2e8b57;border-color:#2e8b57;color:#fff}
 
-  /* ── Main container ── */
-  .main{max-width:var(--max-w);margin:0 auto;padding:var(--space-l) var(--pad-x) var(--space-xl)}
+/* ── Main container ── */
+.main{max-width:var(–max-w);margin:0 auto;padding:var(–space-l) var(–pad-x) var(–space-xl)}
 
-  /* ── Loading ── */
-  .state-loading{text-align:center;padding:var(--space-xl) var(--pad-x)}
-  .loading-leaf{display:block;font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:var(--space-m);animation:sway 3s ease-in-out infinite}
-  @keyframes sway{0%,100%{transform:rotate(-8deg) scale(.95);opacity:.4}50%{transform:rotate(8deg) scale(1.05);opacity:1}}
-  .loading-text{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+/* ── Loading ── */
+.state-loading{text-align:center;padding:var(–space-xl) var(–pad-x)}
+.loading-leaf{display:block;font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:var(–space-m);animation:sway 3s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-8deg) scale(.95);opacity:.4}50%{transform:rotate(8deg) scale(1.05);opacity:1}}
+.loading-text{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(–muted)}
 
-  /* ── Error ── */
-  .state-error{text-align:center;padding:var(--space-l) var(--pad-x);border:1px solid var(--rule);max-width:500px;margin:0 auto;background:var(--paper-2)}
-  .state-error h2{font-family:var(--serif);font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:700;margin-bottom:var(--space-xs)}
-  .state-error p{color:var(--muted);font-size:clamp(.8rem,1.2vw,.9rem);line-height:1.75;margin-bottom:var(--space-m)}
-  .btn{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:#2e8b57;color:#fff;border:none;padding:.8em 2em;cursor:pointer;transition:background .2s;border-radius:2px}
-  .btn:hover{background:#256f47}
+/* ── Error ── */
+.state-error{text-align:center;padding:var(–space-l) var(–pad-x);border:1px solid var(–rule);max-width:500px;margin:0 auto;background:var(–paper-2)}
+.state-error h2{font-family:var(–serif);font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:700;margin-bottom:var(–space-xs)}
+.state-error p{color:var(–muted);font-size:clamp(.8rem,1.2vw,.9rem);line-height:1.75;margin-bottom:var(–space-m)}
+.btn{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.18em;text-transform:uppercase;background:#2e8b57;color:#fff;border:none;padding:.8em 2em;cursor:pointer;transition:background .2s;border-radius:2px}
+.btn:hover{background:#256f47}
 
-  /* ── Article ── */
-  .article{animation:rise .6s cubic-bezier(.22,.68,0,1.15) both}
-  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+/* ── Article ── */
+.article{animation:rise .6s cubic-bezier(.22,.68,0,1.15) both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 
-  .a-kicker{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:var(--space-s)}
-  .kicker-dot{width:clamp(6px,1vw,8px);height:clamp(6px,1vw,8px);border-radius:50%;background:#2e8b57;flex-shrink:0}
-  .kicker-text{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2e8b57}
+.a-kicker{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:var(–space-s)}
+.kicker-dot{width:clamp(6px,1vw,8px);height:clamp(6px,1vw,8px);border-radius:50%;background:#2e8b57;flex-shrink:0}
+.kicker-text{font-family:var(–sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#2e8b57}
 
-  .a-headline{
-    font-family:var(--serif);
-    font-size:clamp(1.5rem,4.5vw,3.4rem);
-    font-weight:900;
-    line-height:1.08;
-    letter-spacing:-.02em;
-    color:var(--ink);
-    margin-bottom:var(--space-m);
-    max-width:var(--max-text);
-  }
+.a-headline{
+font-family:var(–serif);
+font-size:clamp(1.5rem,4.5vw,3.4rem);
+font-weight:900;
+line-height:1.08;
+letter-spacing:-.02em;
+color:var(–ink);
+margin-bottom:var(–space-m);
+max-width:var(–max-text);
+}
 
-  /* ── Stauner box ── */
-  .stauner-box{
-    max-width:var(--max-text);
-    margin-bottom:var(--space-l);
-    background:var(--green-pale);
-    border-left:clamp(3px,0.5vw,5px) solid #2e8b57;
-    padding:clamp(1rem,3vw,2rem) clamp(1rem,3vw,2.25rem);
-  }
-  .stauner-label{font-family:var(--sans);font-size:clamp(.5rem,.75vw,.6rem);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#2e8b57;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
-  .stauner-label::before{content:'✦';font-size:.5rem}
-  .stauner-text{
-    font-family:var(--serif);
-    font-size:clamp(1rem,2.2vw,1.25rem);
-    font-style:italic;
-    line-height:1.65;
-    color:var(--ink-2);
-  }
+/* ── Stauner box ── */
+.stauner-box{
+max-width:var(–max-text);
+margin-bottom:var(–space-l);
+background:var(–green-pale);
+border-left:clamp(3px,0.5vw,5px) solid #2e8b57;
+padding:clamp(1rem,3vw,2rem) clamp(1rem,3vw,2.25rem);
+}
+.stauner-label{font-family:var(–sans);font-size:clamp(.5rem,.75vw,.6rem);font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#2e8b57;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem}
+.stauner-label::before{content:‘✦’;font-size:.5rem}
+.stauner-text{
+font-family:var(–serif);
+font-size:clamp(1rem,2.2vw,1.25rem);
+font-style:italic;
+line-height:1.65;
+color:var(–ink-2);
+}
 
-  /* ── Body text ── */
-  .a-body{
-    font-size:clamp(.95rem,1.8vw,1.08rem);
-    line-height:clamp(1.7,2.5vw,1.95);
-    max-width:var(--max-text);
-    color:var(--ink-3);
-  }
-  .a-body p{margin-bottom:clamp(.9em,2vw,1.4em)}
-  .a-body p:last-child{margin-bottom:0}
-  .a-body p:first-child::first-letter{
-    font-family:var(--serif);
-    font-size:clamp(2.4rem,6vw,3.8rem);
-    font-weight:900;
-    line-height:.8;
-    float:left;
-    margin-right:.1em;
-    margin-top:.05em;
-    color:#2e8b57;
-  }
+/* ── Body text ── */
+.a-body{
+font-size:clamp(.95rem,1.8vw,1.08rem);
+line-height:clamp(1.7,2.5vw,1.95);
+max-width:var(–max-text);
+color:var(–ink-3);
+}
+.a-body p{margin-bottom:clamp(.9em,2vw,1.4em)}
+.a-body p:last-child{margin-bottom:0}
+.a-body p:first-child::first-letter{
+font-family:var(–serif);
+font-size:clamp(2.4rem,6vw,3.8rem);
+font-weight:900;
+line-height:.8;
+float:left;
+margin-right:.1em;
+margin-top:.05em;
+color:#2e8b57;
+}
 
-  /* ── Schon gewusst ── */
-  .schon-gewusst{
-    max-width:var(--max-text);
-    margin-top:var(--space-l);
-    padding:clamp(.85rem,2vw,1.25rem) clamp(1rem,2.5vw,1.75rem);
-    border-left:3px solid var(--rule);
-    background:var(--paper-2);
-    display:flex;
-    gap:.85rem;
-    align-items:flex-start;
-  }
-  .schon-gewusst-label{
-    font-family:var(--sans);
-    font-size:clamp(.5rem,.75vw,.6rem);
-    font-weight:600;
-    letter-spacing:.18em;
-    text-transform:uppercase;
-    color:var(--muted);
-    white-space:nowrap;
-    padding-top:.2rem;
-    flex-shrink:0;
-  }
-  .schon-gewusst-text{
-    font-family:var(--sans);
-    font-size:clamp(.82rem,1.4vw,.9rem);
-    line-height:1.65;
-    color:var(--ink-3);
-  }
+/* ── Schon gewusst ── */
+.schon-gewusst{
+max-width:var(–max-text);
+margin-top:var(–space-l);
+padding:clamp(.85rem,2vw,1.25rem) clamp(1rem,2.5vw,1.75rem);
+border-left:3px solid var(–rule);
+background:var(–paper-2);
+display:flex;
+gap:.85rem;
+align-items:flex-start;
+}
+.schon-gewusst-label{
+font-family:var(–sans);
+font-size:clamp(.5rem,.75vw,.6rem);
+font-weight:600;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:var(–muted);
+white-space:nowrap;
+padding-top:.2rem;
+flex-shrink:0;
+}
+.schon-gewusst-text{
+font-family:var(–sans);
+font-size:clamp(.82rem,1.4vw,.9rem);
+line-height:1.65;
+color:var(–ink-3);
+}
 
-  /* ── Divider ── */
-  .divider{max-width:var(--max-text);display:flex;align-items:center;gap:1rem;margin:var(--space-l) 0}
-  .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--rule)}
-  .divider-mark{font-family:var(--serif);font-size:.8rem;letter-spacing:.5em;color:var(--rule)}
+/* ── Divider ── */
+.divider{max-width:var(–max-text);display:flex;align-items:center;gap:1rem;margin:var(–space-l) 0}
+.divider::before,.divider::after{content:’’;flex:1;height:1px;background:var(–rule)}
+.divider-mark{font-family:var(–serif);font-size:.8rem;letter-spacing:.5em;color:var(–rule)}
 
-  /* ── Colophon ── */
-  .colophon{
-    max-width:var(--max-text);
-    padding-top:var(--space-s);
-    border-top:2px solid var(--green-pale);
-  }
-  .colophon-source{font-family:var(--sans);font-size:clamp(.58rem,.85vw,.65rem);color:var(--muted);letter-spacing:.05em;line-height:1.6}
-  .colophon-source strong{color:var(--ink-3);font-weight:600}
+/* ── Colophon ── */
+.colophon{
+max-width:var(–max-text);
+padding-top:var(–space-s);
+border-top:2px solid var(–green-pale);
+}
+.colophon-source{font-family:var(–sans);font-size:clamp(.58rem,.85vw,.65rem);color:var(–muted);letter-spacing:.05em;line-height:1.6}
+.colophon-source strong{color:var(–ink-3);font-weight:600}
 
-  /* ── Footer ── */
-  .site-footer{background:var(--paper-3);border-top:1px solid var(--rule)}
-  .footer-inner{max-width:var(--max-w);margin:0 auto;padding:var(--space-s) var(--pad-x);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-s)}
-  .footer-brand{font-family:var(--serif);font-size:clamp(.85rem,1.5vw,1rem);font-weight:700;color:var(--ink-3);letter-spacing:-.01em}
-  .footer-brand span{color:#2e8b57;font-style:italic}
-  .footer-copy{font-family:var(--sans);font-size:clamp(.52rem,.75vw,.6rem);letter-spacing:.1em;color:var(--muted)}
+/* ── Footer ── */
+.site-footer{background:var(–paper-3);border-top:1px solid var(–rule)}
+.footer-inner{max-width:var(–max-w);margin:0 auto;padding:var(–space-s) var(–pad-x);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(–space-s)}
+.footer-brand{font-family:var(–serif);font-size:clamp(.85rem,1.5vw,1rem);font-weight:700;color:var(–ink-3);letter-spacing:-.01em}
+.footer-brand span{color:#2e8b57;font-style:italic}
+.footer-copy{font-family:var(–sans);font-size:clamp(.52rem,.75vw,.6rem);letter-spacing:.1em;color:var(–muted)}
 
-  /* ── Narrow screens only: stack footer, hide tagline/date ── */
-  @media(max-width:540px){
-    .m-tagline{display:none}
-    .m-date-top{display:none}
-    .band-date{display:none}
-    .footer-inner{flex-direction:column;text-align:center}
-  }
+/* ── Narrow screens only: stack footer, hide tagline/date ── */
+@media(max-width:540px){
+.m-tagline{display:none}
+.m-date-top{display:none}
+.band-date{display:none}
+.footer-inner{flex-direction:column;text-align:center}
+}
 </style>
+
 </head>
 <body>
 
 <header class="masthead">
   <div class="masthead-inner">
     <div class="m-top">
-      <span class="m-tag">✦ Hirnholz — tägliche Edition</span>
+      <span class="m-tag" id="js-m-tag">✦ Hirnholz — tägliche Edition</span>
       <span class="m-date-top" id="js-date-top"></span>
+      <div class="switches">
+        <button class="switch-btn" id="js-theme-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
+        <button class="lang-switch-btn" id="js-lang-btn" onclick="toggleLang()">
+          <span id="js-lang-icon">🌐</span><span id="js-lang-label">DE</span>
+        </button>
+      </div>
     </div>
     <div class="m-title-row">
-      <h1 class="m-title">Der tägliche <span class="m-title-accent">Stauner</span></h1>
-      <p class="m-tagline">Was wir über die Welt zu wissen glauben — und was wirklich stimmt.</p>
+      <h1 class="m-title"><span id="js-title-plain">Der tägliche </span><span class="m-title-accent" id="js-title-accent">Stauner</span></h1>
+      <p class="m-tagline" id="js-tagline">Was wir über die Welt zu wissen glauben — und was wirklich stimmt.</p>
     </div>
   </div>
 </header>
 
 <div class="green-band">
   <div class="green-band-inner">
-    <span class="band-motto">Jeden Morgen eine Erkenntnis — belegt, überraschend, ermutigend</span>
+    <span class="band-motto" id="js-band-motto">Jeden Morgen eine Erkenntnis — belegt, überraschend, ermutigend</span>
     <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
       <span class="band-date" id="js-date-band"></span>
       <div class="nav-menu">
         <button class="nav-btn" id="js-nav-btn" onclick="toggleNav()">
-          Die Sammlung <span class="nav-arrow">▼</span>
+          <span id="js-nav-btn-text">Die Sammlung</span> <span class="nav-arrow">▼</span>
         </button>
         <div class="nav-dropdown" id="js-nav-dropdown">
-          <div class="nav-dropdown-header">Nach Kategorie</div>
+          <div class="nav-dropdown-header" id="js-nav-header">Nach Kategorie</div>
           <div id="js-nav-categories"><a href="sammlung.html">Alle Geschichten laden…</a></div>
           <div class="nav-dropdown-divider"></div>
-          <a href="sammlung.html" class="nav-dropdown-all">✦ Gesamte Sammlung →</a>
+          <a href="sammlung.html" class="nav-dropdown-all" id="js-nav-all">✦ Gesamte Sammlung →</a>
         </div>
       </div>
     </div>
@@ -244,12 +299,12 @@
 <main class="main">
   <div id="js-loading" class="state-loading">
     <span class="loading-leaf">🌿</span>
-    <p class="loading-text">Der Stauner des Tages wird vorbereitet …</p>
+    <p class="loading-text" id="js-loading-text">Der Stauner des Tages wird vorbereitet …</p>
   </div>
   <div id="js-error" class="state-error" style="display:none">
-    <h2>Heute keine Verbindung</h2>
-    <p>Der Stauner konnte nicht geladen werden. Bitte versuche es gleich noch einmal.</p>
-    <button class="btn" onclick="loadStory()">Erneut versuchen</button>
+    <h2 id="js-error-title">Heute keine Verbindung</h2>
+    <p id="js-error-text">Der Stauner konnte nicht geladen werden. Bitte versuche es gleich noch einmal.</p>
+    <button class="btn" id="js-error-btn" onclick="loadStory()">Erneut versuchen</button>
   </div>
   <div id="js-article" style="display:none"></div>
 </main>
@@ -257,7 +312,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <span class="footer-brand">Hirn<span>holz</span></span>
-    <span class="footer-copy">Jeden Morgen um 5 Uhr — <span id="js-year"></span></span>
+    <span class="footer-copy"><span id="js-footer-motto">Jeden Morgen um 5 Uhr</span> — <span id="js-year"></span></span>
   </div>
 </footer>
 
@@ -754,6 +809,147 @@ async function loadNavCategories() {
 
 loadNavCategories();
 
+
+/* ═══════════════════════════════════════════════
+   ÜBERSETZUNGEN
+═══════════════════════════════════════════════ */
+const TRANSLATIONS = {
+  de: {
+    eyebrow: '✦ Hirnholz — tägliche Edition',
+    title: 'Der tägliche',
+    titleAccent: 'Stauner',
+    tagline: 'Was wir über die Welt zu wissen glauben — und was wirklich stimmt.',
+    motto: 'Jeden Morgen eine Erkenntnis — belegt, überraschend, ermutigend',
+    staunerLabel: 'Das Staunen des Tages',
+    schonLabel: 'Schon gewusst?',
+    quelleLabel: 'Quelle',
+    sammlung: 'Die Sammlung',
+    sammlungHeader: 'Nach Kategorie',
+    sammlungAll: '✦ Gesamte Sammlung →',
+    footerMotto: 'Jeden Morgen um 5 Uhr',
+    loadingText: 'Der Stauner des Tages wird vorbereitet …',
+    errorTitle: 'Heute keine Verbindung',
+    errorText: 'Der Stauner konnte nicht geladen werden. Bitte versuche es gleich noch einmal.',
+    errorBtn: 'Erneut versuchen',
+    sammlung_url: 'sammlung.html'
+  },
+  en: {
+    eyebrow: '✦ BrainGrain — daily edition',
+    title: 'The daily',
+    titleAccent: 'Wonder',
+    tagline: 'What we think we know about the world — and what is really true.',
+    motto: 'Every morning one insight — evidence-based, surprising, encouraging',
+    staunerLabel: 'The Wonder of the Day',
+    schonLabel: 'Did you know?',
+    quelleLabel: 'Source',
+    sammlung: 'The Collection',
+    sammlungHeader: 'By Category',
+    sammlungAll: '✦ Full Collection →',
+    footerMotto: 'Every morning at 5 AM',
+    loadingText: 'Today's wonder is being prepared …',
+    errorTitle: 'No connection today',
+    errorText: 'The wonder could not be loaded. Please try again in a moment.',
+    errorBtn: 'Try again',
+    sammlung_url: 'sammlung.html'
+  }
+};
+
+let currentTheme = localStorage.getItem('stauner-theme') || 'auto';
+let currentLang = localStorage.getItem('stauner-lang') || 'de';
+
+function applyTheme(theme) {
+  const root = document.documentElement;
+  if (theme === 'auto') {
+    root.removeAttribute('data-theme');
+  } else {
+    root.setAttribute('data-theme', theme);
+  }
+  const btn = document.getElementById('js-theme-btn');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+function toggleTheme() {
+  if (currentTheme === 'auto' || currentTheme === 'light') {
+    currentTheme = 'dark';
+  } else {
+    currentTheme = 'light';
+  }
+  localStorage.setItem('stauner-theme', currentTheme);
+  applyTheme(currentTheme);
+}
+
+function applyLang(lang) {
+  const t = TRANSLATIONS[lang];
+  const setT = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+  const setH = (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html; };
+
+  setT('js-lang-label', lang.toUpperCase());
+  document.getElementById('js-lang-icon').textContent = lang === 'de' ? '🌐' : '🌐';
+  document.getElementById('js-lang-btn').classList.toggle('active', lang === 'en');
+
+  setT('js-m-tag', t.eyebrow);
+  setT('js-title-plain', t.title + ' ');
+  setT('js-title-accent', t.titleAccent);
+  setT('js-tagline', t.tagline);
+  setT('js-band-motto', t.motto);
+  setT('js-nav-btn-text', t.sammlung);
+  setT('js-nav-header', t.sammlungHeader);
+  setT('js-nav-all', t.sammlungAll);
+  setT('js-footer-motto', t.footerMotto);
+  setT('js-loading-text', t.loadingText);
+  setT('js-error-title', t.errorTitle);
+  setT('js-error-text', t.errorText);
+  setT('js-error-btn', t.errorBtn);
+
+  document.documentElement.lang = lang;
+  document.title = lang === 'de' ? 'Der tägliche Stauner' : 'The Daily Wonder';
+
+  // Update date format
+  const now = new Date();
+  const locale = lang === 'de' ? 'de-DE' : 'en-GB';
+  const topEl = document.getElementById('js-date-top');
+  const bandEl = document.getElementById('js-date-band');
+  if (topEl) topEl.textContent = now.toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  if (bandEl) bandEl.textContent = now.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+
+  // Re-render article if loaded
+  if (currentStoryDE) renderInLang(currentStoryDE, lang);
+}
+
+async function toggleLang() {
+  currentLang = currentLang === 'de' ? 'en' : 'de';
+  localStorage.setItem('stauner-lang', currentLang);
+  applyLang(currentLang);
+}
+
+function renderInLang(story, lang) {
+  const t = TRANSLATIONS[lang];
+  const paras = (story.absaetze || []).map(p => `<p>${p}</p>`).join('');
+  const bonusHtml = story.schon_gewusst
+    ? `<div class="schon-gewusst"><span class="schon-gewusst-label">${t.schonLabel}</span><p class="schon-gewusst-text">${story.schon_gewusst}</p></div>`
+    : '';
+  const sourceHtml = story.quelle_url
+    ? `<a href="${story.quelle_url}" target="_blank" rel="noopener" style="color:#2e8b57;text-decoration:none;">${story.quelle}</a>`
+    : (story.quelle || '');
+
+  const el = document.getElementById('js-article');
+  el.className = 'article';
+  el.innerHTML = `
+    <div class="a-kicker"><span class="kicker-dot"></span><span class="kicker-text">${story.kategorie || ''}</span></div>
+    <h2 class="a-headline">${story.titel || ''}</h2>
+    <div class="stauner-box">
+      <div class="stauner-label">${t.staunerLabel}</div>
+      <p class="stauner-text">${story.stauner || ''}</p>
+    </div>
+    <div class="a-body">${paras}</div>
+    ${bonusHtml}
+    <div class="divider"><span class="divider-mark">✦ ✦ ✦</span></div>
+    <div class="colophon">
+      <span class="colophon-source"><strong>${t.quelleLabel}:</strong> ${sourceHtml}</span>
+    </div>
+  `;
+}
+
 async function loadStory() {
   show('loading');
   try {
@@ -776,16 +972,16 @@ function show(id) {
 /* ═══════════════════════════════════════════════
    INIT
 ═══════════════════════════════════════════════ */
-const now = new Date();
-document.getElementById('js-date-top').textContent = now.toLocaleDateString('de-DE', {
-  weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
-});
-document.getElementById('js-date-band').textContent = now.toLocaleDateString('de-DE', {
-  day: 'numeric', month: 'long', year: 'numeric'
-});
-document.getElementById('js-year').textContent = now.getFullYear();
+document.getElementById('js-year').textContent = new Date().getFullYear();
+
+// Apply saved theme
+applyTheme(currentTheme);
+
+// Apply saved lang
+applyLang(currentLang);
 
 loadStory();
 </script>
+
 </body>
 </html>
