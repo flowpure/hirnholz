@@ -54,5 +54,19 @@
     "quelle": "University of Michigan, Human-Computer Interaction Institute",
     "quelle_url": "https://www.umich.edu/news-releases/multitasking-takes-its-toll/",
     "datum": "2026-04-01"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Das Phantom der 10-Prozent: Warum wir nur einen winzigen Teil unseres Gehirns nutzen – und warum das völlig falsch ist",
+    "stauner": "Die verbreitetste Neuromythe besagt, dass Menschen nur 10 Prozent ihres Gehirns nutzen. Tatsächlich verwenden wir praktisch alle Regionen unseres Gehirns, und die meisten Bereiche sind ständig aktiv – sogar im Schlaf.",
+    "absaetze": [
+      "Der Mythos der 10-Prozent-Nutzung hält sich hartnäckig in Populärkultur und Marketing. Er suggiert, dass wir riesige Reserven an ungenutztem Potenzial haben – eine verlockende Vorstellung. Doch moderne Neuroimaging-Technologien wie funktionelle Magnetresonanztomographie (fMRT) zeigen ein völlig anderes Bild: Selbst während wir schlafen, sind nahezu alle Gehirnregionen aktiv und verbrauchen kontinuierlich Energie.",
+      "Die Realität ist noch faszinierender: Jede einzelne Region des Gehirns hat eine spezifische Funktion. Patienten mit Schädigungen in kleinsten Arealen erleiden oft dramatische Funktionsverluste – was beweist, dass kein Teil des Gehirns 'ungenutzt' ist. Selbst bei scheinbar stillschweigenden Regionen wie dem präfrontalen Kortex finden konstant komplexe kognitive Prozesse statt. Das menschliche Gehirn ist ein hypereffizienter Organismus, der täglich etwa 20 Prozent der Körperenergie verbraucht.",
+      "Was wir tatsächlich optimieren können, ist nicht die Gehirnnutzung insgesamt, sondern die Effizienz und Vernetzung zwischen bereits aktiven Regionen. Lernen, Konzentration und kognitives Training stärken die Kommunikation zwischen Neuronen – nicht die Aktivierung 'schlafender' Areale. Das ist weniger mystisch, aber wissenschaftlich ungleich spannender."
+    ],
+    "schon_gewusst": "Der Mythos der 10-Prozent-Nutzung entstand wahrscheinlich aus einer Fehlinterpretation von William James' Aussage aus dem Jahr 1908, dass Menschen 'nur einen kleinen Teil ihrer mentalen Ressourcen ausschöpfen'. Dies bezog sich auf psychologisches Potenzial, nicht auf physische Gehirnnutzung.",
+    "quelle": "Brain Facts – Society for Neuroscience, offizielle Datenbank für neurowissenschaftliche Erkenntnisse",
+    "quelle_url": "https://www.brainfacts.org/",
+    "datum": "2026-04-02"
   }
 ]
