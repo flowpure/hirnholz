@@ -1,14 +1,14 @@
 {
-  "kategorie": "Neurowissenschaften",
-  "titel": "Die Lüge der Spiegelneurone: Warum Empathie nicht durch Nachahmen entsteht",
-  "stauner": "Seit den 1990ern glauben Wissenschaftler, dass spezielle 'Spiegelneurone' uns automatisch in andere Menschen einfühlen lassen. Aber die Realität ist komplexer: Diese Neuronen sind nur ein kleiner Teil eines viel größeren, bewussteren Empathie-Systems.",
+  "kategorie": "Neurologie",
+  "titel": "Die Lüge der Linkshänder-Benachteiligung: Warum Südpaws tatsächlich neurologische Vorteile haben",
+  "stauner": "Linkshänder gelten als benachteiligt in einer Rechtshänder-Welt. Doch neurowissenschaftliche Studien zeigen: Ihre Gehirne sind anders organisiert – und das bringt messbare kognitive Vorteile mit sich, die Rechtshänder nicht haben.",
   "absaetze": [
-    "Die Entdeckung der Spiegelneurone bei Makaken-Affen war faszinierend: Bestimmte Nervenzellen feuerten sowohl, wenn das Tier eine Handlung ausführte, als auch wenn es diese beobachtete. Schnell entstand die Theorie, dass diese Neuronen automatisch Empathie erzeugen – wir verstehen andere Menschen, weil unser Gehirn ihre Handlungen unbewusst nachahmt. Diese Idee war so verlockend, dass sie in tausende Lehrbücher und populärwissenschaftliche Werke Eingang fand.",
-    "Doch neuere Forschungen zeigen ein anderes Bild: Spiegelneurone sind weniger spezialisiert als ursprünglich angenommen, und es gibt sie nicht nur in den vermeintlich 'empathie-zuständigen' Hirnregionen. Vor allem aber: Menschen mit Schädigungen in diesen Regionen haben oft völlig normale Empathie-Fähigkeiten. Gleichzeitig können psychopathische Personen diese Neuronen perfekt aktivieren – verstehen aber emotional nicht, was ihr Gegenüber fühlt. Empathie entsteht durch komplexe Netzwerke, bewusste Aufmerksamkeit und sozialen Kontext, nicht durch automatische Nachahmung.",
-    "Das Bemerkenswerte: Diese Erkenntnis macht Empathie nicht weniger wertvoll, sondern mehr. Sie ist kein reflexhafter biologischer Automatismus, sondern etwas, das wir aktiv entwickeln, üben und stärken können – durch echtes Zuhören, Neugier und bewusste emotionale Arbeit."
+    "Das hartnäckigste Mythos über Linkshänder ist, dass sie in einer 'feindlichen' Umgebung leben und darunter leiden. Tatsächlich leiden sie unter unbequemen Scheren und Schreibtischen – aber nicht unter neurologischen Nachteilen. Die größere Wahrheit: Etwa 10-12% der Bevölkerung sind Linkshänder, und ihre Gehirne zeigen eine fundamentale Unterschied in der Hemisphären-Spezialisierung.",
+    "Hochauflösende Hirnscans offenbaren, dass bei Linkshändern die Verbindungen zwischen linker und rechter Gehirnhälfte dichter und effizienter sind. Das Corpus Callosum – die 'Autobahn' zwischen den Hemisphären – ist bei ihnen signifikant größer. Diese anatomische Besonderheit führt zu messbaren Vorteilen: Linkshänder zeigen überdurchschnittliche Leistungen in räumlicher Visualisierung, kreativen Problemlösungen und mathematischem Denken. Studien der Oxford University fanden, dass etwa 20% der mathematisch hochbegabten Schüler Linkshänder waren, obwohl sie nur 10% der Bevölkerung ausmachen.",
+    "Noch faszinierender: Linkshänder haben eine höhere Wahrscheinlichkeit für bilaterale Sprachlokalisierung – ihre Sprachzentren verteilen sich auf beide Hemisphären statt nur auf die linke. Das bedeutet nicht nur redundante Sicherheit bei neurologischen Verletzungen, sondern auch eine andere Art zu denken und zu lernen. Die vermeintliche 'Benachteiligung' ist tatsächlich eine neurologische Diversität, die der Menschheit Künstler, Innovatoren und Denker beschert hat, die anders – nicht schlechter – arbeiten."
   ],
-  "schon_gewusst": "Der Neurowissenschaftler Vittorio Gallese, einer der Entdecker der Spiegelneurone, warnt selbst vor einer zu simplen Interpretation seiner eigenen Forschung und spricht von einem 'Spiegelneuron-Mythos', der in der öffentlichen Debatte entstanden ist.",
-  "quelle": "Max-Planck-Institut für Kognitions- und Neurowissenschaften",
-  "quelle_url": "https://www.cbs.mpg.de/departments/social-neuroscience",
-  "datum": "2026-04-03"
+  "schon_gewusst": "Unter berühmten Linkshändern finden sich überproportional viele Nobelpreisträger in Physik und Chemie. Es ist nicht die Linkshändigkeit selbst, die Genialität schafft – aber die neurologische Struktur ermöglicht bestimmte Arten des Denkens, die für bahnbrechende Entdeckungen wertvoll sind.",
+  "quelle": "Oxford University Department of Experimental Psychology – Studie zur Gehirnstruktur und kognitiven Fähigkeiten bei Linkshändern",
+  "quelle_url": "https://www.psy.ox.ac.uk",
+  "datum": "2026-04-04"
 }

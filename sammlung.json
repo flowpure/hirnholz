@@ -110,5 +110,19 @@
     "quelle": "Max-Planck-Institut für Kognitions- und Neurowissenschaften",
     "quelle_url": "https://www.cbs.mpg.de/departments/social-neuroscience",
     "datum": "2026-04-03"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Linkshänder-Benachteiligung: Warum Südpaws tatsächlich neurologische Vorteile haben",
+    "stauner": "Linkshänder gelten als benachteiligt in einer Rechtshänder-Welt. Doch neurowissenschaftliche Studien zeigen: Ihre Gehirne sind anders organisiert – und das bringt messbare kognitive Vorteile mit sich, die Rechtshänder nicht haben.",
+    "absaetze": [
+      "Das hartnäckigste Mythos über Linkshänder ist, dass sie in einer 'feindlichen' Umgebung leben und darunter leiden. Tatsächlich leiden sie unter unbequemen Scheren und Schreibtischen – aber nicht unter neurologischen Nachteilen. Die größere Wahrheit: Etwa 10-12% der Bevölkerung sind Linkshänder, und ihre Gehirne zeigen eine fundamentale Unterschied in der Hemisphären-Spezialisierung.",
+      "Hochauflösende Hirnscans offenbaren, dass bei Linkshändern die Verbindungen zwischen linker und rechter Gehirnhälfte dichter und effizienter sind. Das Corpus Callosum – die 'Autobahn' zwischen den Hemisphären – ist bei ihnen signifikant größer. Diese anatomische Besonderheit führt zu messbaren Vorteilen: Linkshänder zeigen überdurchschnittliche Leistungen in räumlicher Visualisierung, kreativen Problemlösungen und mathematischem Denken. Studien der Oxford University fanden, dass etwa 20% der mathematisch hochbegabten Schüler Linkshänder waren, obwohl sie nur 10% der Bevölkerung ausmachen.",
+      "Noch faszinierender: Linkshänder haben eine höhere Wahrscheinlichkeit für bilaterale Sprachlokalisierung – ihre Sprachzentren verteilen sich auf beide Hemisphären statt nur auf die linke. Das bedeutet nicht nur redundante Sicherheit bei neurologischen Verletzungen, sondern auch eine andere Art zu denken und zu lernen. Die vermeintliche 'Benachteiligung' ist tatsächlich eine neurologische Diversität, die der Menschheit Künstler, Innovatoren und Denker beschert hat, die anders – nicht schlechter – arbeiten."
+    ],
+    "schon_gewusst": "Unter berühmten Linkshändern finden sich überproportional viele Nobelpreisträger in Physik und Chemie. Es ist nicht die Linkshändigkeit selbst, die Genialität schafft – aber die neurologische Struktur ermöglicht bestimmte Arten des Denkens, die für bahnbrechende Entdeckungen wertvoll sind.",
+    "quelle": "Oxford University Department of Experimental Psychology – Studie zur Gehirnstruktur und kognitiven Fähigkeiten bei Linkshändern",
+    "quelle_url": "https://www.psy.ox.ac.uk",
+    "datum": "2026-04-04"
   }
 ]
