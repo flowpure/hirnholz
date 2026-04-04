@@ -124,5 +124,19 @@
     "quelle": "Oxford University Department of Experimental Psychology – Studie zur Gehirnstruktur und kognitiven Fähigkeiten bei Linkshändern",
     "quelle_url": "https://www.psy.ox.ac.uk",
     "datum": "2026-04-04"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Rechts-Links-Hirnhälfte: Warum wir nicht in 'kreative' und 'logische' Menschen eingeteilt werden können",
+    "stauner": "Jahrzehntelang galt es als Fakt: Die linke Hirnhälfte ist für Logik zuständig, die rechte für Kreativität. Doch moderne Neuroimaging-Studien zeigen ein völlig anderes Bild. Die Wahrheit ist subtiler – und faszinierender.",
+    "absaetze": [
+      "Der Mythos der Hemisphären-Spezialisierung entstand in den 1960er Jahren, als Forscher Patienten mit durchtrennendem Corpus Callosum studierten – ein invasives Verfahren gegen Epilepsie. Diese extreme Situation führte zu übergenus vereinfachten Schlussfolgerungen. Schnell entstanden pseudowissenschaftliche Selbsttests: 'Bist du Linkshirn oder Rechtshirn?' Millionen Menschen ordneten sich selbst in diese Kategorien ein.",
+      "Die Realität ist differenzierter: Beide Hirnhälften arbeiten bei praktisch jeder kognitiven Aufgabe zusammen. Kreativität benötigt nicht nur die 'rechte' Seite – sie erfordert auch die logische Sequenzierung, Gedächtnisabruf und Planungsfähigkeiten der linken Seite. Ein Mathematiker benötigt räumliche Intuition (traditionell 'rechts'), während ein Künstler Feinmotorik und sprachliche Konzeption braucht (traditionell 'links').",
+      "Moderne funktionelle MRT-Studien zeigen, dass die Gehirne hochkreativer Menschen wie Komponisten oder Mathematiker bilateral aktiviert sind – nicht einseitig dominiert. Das eigentliche Merkmal außergewöhnlicher kognitiver Fähigkeiten ist die optimierte Vernetzung zwischen den Hemisphären, nicht ihre Trennung. Menschen sind nicht Linkshirn- oder Rechtshirntypen. Sie sind komplexe, integrierte neuronale Systeme."
+    ],
+    "schon_gewusst": "Selbst die legendären 'geteilten Hirn'-Patienten aus den 1960ern zeigten im Alltag keine merklichen Persönlichkeitsveränderungen – was nahelegt, dass ihre Hirnhälften bereits eine tiefe funktionale Redundanz hatten.",
+    "quelle": "University of Utah – Neuroscience Research Institute und Nature Reviews Neuroscience",
+    "quelle_url": "https://www.nature.com/articles/nrn.2017.107",
+    "datum": "2026-04-04"
   }
 ]
