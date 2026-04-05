@@ -152,5 +152,19 @@
     "quelle": "University of California, Berkeley – 'Sleep Restores Wakefulness Levels of Phosphorylated Tau in the Human Brain'",
     "quelle_url": "https://www.nature.com/articles/s41593-023-01390-x",
     "datum": "2026-04-05"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Gedächtnis-Festplatte: Warum unser Gehirn keine Erinnerungen speichert, sondern ständig neu erfindet",
+    "stauner": "Wir glauben, dass Erinnerungen wie Dateien in unserem Gehirn abgespeichert werden – abrufbar und unveränderbar. In Wirklichkeit rekonstruiert unser Gehirn jedes Mal, wenn wir uns erinnern, die gesamte Erinnerung neu – und verändert sie dabei grundlegend.",
+    "absaetze": [
+      "Die verbreitete Annahme ist elegant und intuitiv: Das Gehirn funktioniert wie ein biologischer Computer, der Erinnerungen speichert wie Festplatten Daten abspeichern – präzise, dauerhaft, abrufbar. Diese Vorstellung prägt unsere Rechtssysteme, Therapien und sogar unsere Selbstwahrnehmung. Wenn wir eine Erinnerung 'abrufen', gehen wir davon aus, dass wir eine originalgetreue Kopie ins Bewusstsein holen. Doch die Neurowissenschaft hat längst etwas anderes herausgefunden.",
+      "Die Realität ist radikaler: Jedes Mal, wenn wir uns an etwas erinnern, aktiviert das Gehirn zunächst das ursprüngliche Gedächtnis – dann löst es dieses Gedächtnis auf und speichert es wieder ab. Dieser Prozess nennt sich 'Reconsolidation' und wurde erstmals 2000 in kontrollierten Studien nachgewiesen. Das bedeutet, dass bei jedem Abruf neue Informationen, aktuelle Gefühle und aktuelle Kontexte in die Erinnerung eingewoben werden. Eine Erinnerung von vor zehn Jahren ist nicht mehr dieselbe wie das ursprüngliche Erlebnis – sie ist eine Neuinterpretation, geformt von allem, was seither geschah.",
+      "Die Konsequenzen sind tiefgreifend: Augenzeugenberichte sind weniger zuverlässig, als Gerichte lange annahmen. Therapeutische Techniken, die auf dem 'Abrufen verdrängter Erinnerungen' basieren, können paradoxerweise völlig neue, falsche Erinnerungen erschaffen. Und Nostalgie ist nicht das Gefühl, etwas Altes zurückzubekommen – es ist das Gefühl, eine neue Geschichte über uns selbst zu erzählen. Das Gehirn ist kein Archiv. Es ist ein Geschichtenerzähler, der jedes Mal die Geschichte ein wenig anders erzählt."
+    ],
+    "schon_gewusst": "Menschen können sich bewusst an Erinnerungen 'erinnern', die nie stattgefunden haben – besonders wenn eine vertrauenswürdige Person diese Geschichte mehrfach erzählt hat. Nach etwa 2-3 Wiederholungen beginnt das Gehirn, diese fremde Erinnerung als die eigene zu kodieren.",
+    "quelle": "Center for the Psychology of Memory, University of Massachusetts – Studien zu Reconsolidation und False Memories",
+    "quelle_url": "https://www.umass.edu/ummagazine/articles/memory-reconsolidation",
+    "datum": "2026-04-05"
   }
 ]
