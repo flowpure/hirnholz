@@ -180,5 +180,19 @@
     "quelle": "Marine Bioacoustics Laboratory, University of Massachusetts Dartmouth",
     "quelle_url": "https://www.umassd.edu/engineering/centers/marine-bioacoustics/",
     "datum": "2026-04-06"
+  },
+  {
+    "kategorie": "Neurowissenschaft",
+    "titel": "Die Lüge der Sprachlokalisierung: Warum Sprache nicht einfach in Brocas Areal sitzt",
+    "stauner": "Wir lernen in der Schule, dass Sprache im linken Gehirn lebt – genauer in Brocas und Wernickes Areal. Doch moderne Bildgebung zeigt: Sprache ist ein Netzwerk, das sich über beide Hemisphären erstreckt und dynamisch neu organisisiert. Was Neurologen vor 150 Jahren als Zentren identifizierten, sind tatsächlich nur Knotenpunkte eines viel größeren Systems.",
+    "absaetze": [
+      "Die klassische Neurowissenschaft basierte auf einer einfachen Beobachtung: Patienten mit Schlaganfällen in bestimmten Hirnregionen verloren spezifische Sprachfähigkeiten. Paul Brocas Patienten 1861 konnten sprechen, aber nicht grammatikalisch. Wernickes Patienten 1874 sprachen fließend, verstanden aber nichts. Daraus entstand eine kartografische Illusion: Sprache hätte feste Adressen im Gehirn.",
+      "Funktionale MRT und PET-Scans ab den 1990ern zeigten die verwirrende Realität. Beim Sprechen aktivieren sich nicht nur Brocas Areal und Wernickes Areal, sondern auch der Thalamus, das Kleinhirn, Teile des rechten Frontallappens und sogar motorische Kortexe. Besonders faszinierend: Bei zweisprachigen Menschen können verschiedene Sprachen teilweise in unterschiedlichen Netzwerken aktiv sein, überlappen sich aber massiv. Das Gehirn reorganisiert ständig, je nachdem, was es gerade tut.",
+      "Noch erstaunlicher wird es bei Hirnverletzungen. Wenn Brocas Areal zerstört wird, können andere Regionen oft Teile der Funktion übernehmen – besonders bei jungen Menschen. Erwachsene Aphasiepatienten sprechen wieder, nicht weil die geschädigte Region heilt, sondern weil andere Netzwerke die Aufgabe übernehmen. Sprache ist nicht lokalisiert; sie ist verteilt, plastisch und emergent aus Millionen von Neuronenverbindungen."
+    ],
+    "schon_gewusst": "Das rechte Gehirn, lange als 'stumm' betitelt, verarbeitet aktiv Prosodie – die Melodie, der Rhythmus und die emotionale Färbung von Sprache. Deshalb können Patienten mit Schäden am rechten Frontallappen fließend sprechen, klingen aber völlig ausdruckslos.",
+    "quelle": "Nature Reviews Neuroscience – 'The neurobiology of language' (2021), Greenslade et al.",
+    "quelle_url": "https://www.nature.com/articles/s41583-021-00454-8",
+    "datum": "2026-04-06"
   }
 ]
