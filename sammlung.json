@@ -237,5 +237,19 @@
     "quelle": "Dutch Hunger Winter Famine Study (Roseboom et al.), Max-Planck-Institut für Molekulargenetik",
     "quelle_url": "https://www.mpg.de/epigenetik",
     "datum": "2026-04-07"
+  },
+  {
+    "kategorie": "Meeresbiologie",
+    "titel": "Die Lüge der leeren Meere: Warum Korallenriffe nicht tot sind, sondern nur unsichtbar arbeiten",
+    "stauner": "Wir denken, gebleichte Korallen sind tot. Aber sie sind eher wie Patienten im Koma – metabolisch aktiv, chemisch kommunizierend und oft in der Lage, sich zu erholen, wenn die Bedingungen stimmen. Ein Korallenriff ist kein Museum toten Kalks, sondern ein pulsierendes chemisches Netzwerk, das auch unter Stress noch atmet.",
+    "absaetze": [
+      "Die verbreitete Annahme ist einfach: Wenn Korallen ihre Zooxanthellen verlieren und weiß werden, ist das Riff praktisch tot. Schulbücher zeigen Bilder von gebleichten Riffen wie Friedhöfe. Doch die Realität ist biologisch differenzierter. Korallen sind Tiere, keine Pflanzen – und wie alle Tiere können sie unter Stress überleben, auch wenn sie ihre Symbiose mit den farbgebenden Algen verloren haben. Ein gebleichtes Riff ist ein Riff unter extremem physiologischem Stress, nicht ein totes Riff.",
+      "Forscher des Great Barrier Reef Marine Park Authority haben dokumentiert, dass viele gebleichte Korallen ihre Zooxanthellen innerhalb von Wochen oder Monaten wieder aufnehmen können – wenn die Wassertemperatur sich normalisiert. Die Korallen selbst produzieren während der Bleiche weiterhin Mucus, verdauen Zooplankton und nehmen Nährstoffe auf. Sie sind metabolisch aktiv. Mehr noch: Sie kommunizieren mittels chemischer Signale untereinander und mit Larven anderer Korallenarten, um kollektive Reaktionen auf Stress zu koordinieren. Das ist nicht Stillstand – das ist Überlebensstrategie.",
+      "Das Faszinierendste: Korallen haben auch ein 'Gedächtnis' für Hitze. Wenn ein Riff mehrmals hintereinander Hitzestress erlebt, werden die Korallen resistenter gegen die nächste Episode. Sie können ihre symbiotischen Partner wechseln – nicht alle Zooxanthellen sind gleich; manche ertragen höhere Temperaturen. Ein gebleichtes Riff ist also nicht eine Zone des Todes, sondern eine Zone der Evolution in Echtzeit. Wenn wir aufhören, die Bedingungen zu verschärfen, kann das Riff zurückkommen. Das ist nicht Hoffnung – das ist Biologie."
+    ],
+    "schon_gewusst": "Korallen können bis zu 4000 Jahre alt werden – älter als die ägyptischen Pyramiden. Manche Kolonien sind älter als die gesamte menschliche Zivilisation, wie wir sie kennen.",
+    "quelle": "AIMS – Australian Institute of Marine Science: Coral Bleaching and Recovery Research",
+    "quelle_url": "https://www.aims.gov.au/research/monitoring-coral-bleaching",
+    "datum": "2026-04-08"
   }
 ]

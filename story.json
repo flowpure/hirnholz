@@ -1,14 +1,14 @@
 {
-  "kategorie": "Epigenetik",
-  "titel": "Die Lüge der unveränderlichen Gene: Warum deine DNA nicht dein Schicksal ist, sondern dein Lebensstil",
-  "stauner": "Wir wurden jahrzehntelang gelehrt, dass unsere Gene in Stein gemeißelt sind – aber die Epigenetik zeigt: Dein Verhalten schaltet Gene an und aus, ohne die DNA-Sequenz zu verändern. Das bedeutet, dass Stress, Ernährung und sogar Zuneigung buchstäblich verändern, welche Gene aktiv sind.",
+  "kategorie": "Meeresbiologie",
+  "titel": "Die Lüge der leeren Meere: Warum Korallenriffe nicht tot sind, sondern nur unsichtbar arbeiten",
+  "stauner": "Wir denken, gebleichte Korallen sind tot. Aber sie sind eher wie Patienten im Koma – metabolisch aktiv, chemisch kommunizierend und oft in der Lage, sich zu erholen, wenn die Bedingungen stimmen. Ein Korallenriff ist kein Museum toten Kalks, sondern ein pulsierendes chemisches Netzwerk, das auch unter Stress noch atmet.",
   "absaetze": [
-    "Die klassische Genetik verbreitete lange Zeit die Vorstellung, dass wir 'für etwas bestimmt' sind – wenn Alzheimer in der Familie liegt, entwickelt man es; wenn man Veranlagung für Übergewicht hat, wird man dick. Aber diese Interpretation ignoriert völlig die epigenetische Dimension: Chemische Markierungen (vor allem Methylgruppen) können sich an die DNA anlagern und Gene zum Schweigen bringen oder aktivieren – ohne einen einzigen Buchstaben der Sequenz zu verändern.",
-    "Die wegweisende Dutch Hunger Winter Study zeigt das dramatischste Beispiel: Frauen, die 1944/45 während der Hungersnot schwanger waren, bekamen Kinder mit veränderten epigenetischen Markierungen – diese Kinder hatten ein Leben lang erhöhtes Diabetes-Risiko, obwohl ihre DNA völlig unverändert war. Noch faszinierender: Diese epigenetischen Veränderungen waren noch bei deren Enkeln messbar, die nie hungern mussten.",
-    "Das Revolutionäre ist die Umkehrbarkeit: Anders als genetische Mutationen können epigenetische Veränderungen durch Lebensstiländerungen rückgängig gemacht werden. Studien zeigen, dass intensive Bewegung, Meditation und ausreichend Schlaf tatsächlich Gene reaktivieren können, die durch Stress oder schlechte Ernährung 'stummgeschaltet' worden waren. Du bist also nicht dein genetischer Code – du bist das, was du damit machst."
+    "Die verbreitete Annahme ist einfach: Wenn Korallen ihre Zooxanthellen verlieren und weiß werden, ist das Riff praktisch tot. Schulbücher zeigen Bilder von gebleichten Riffen wie Friedhöfe. Doch die Realität ist biologisch differenzierter. Korallen sind Tiere, keine Pflanzen – und wie alle Tiere können sie unter Stress überleben, auch wenn sie ihre Symbiose mit den farbgebenden Algen verloren haben. Ein gebleichtes Riff ist ein Riff unter extremem physiologischem Stress, nicht ein totes Riff.",
+    "Forscher des Great Barrier Reef Marine Park Authority haben dokumentiert, dass viele gebleichte Korallen ihre Zooxanthellen innerhalb von Wochen oder Monaten wieder aufnehmen können – wenn die Wassertemperatur sich normalisiert. Die Korallen selbst produzieren während der Bleiche weiterhin Mucus, verdauen Zooplankton und nehmen Nährstoffe auf. Sie sind metabolisch aktiv. Mehr noch: Sie kommunizieren mittels chemischer Signale untereinander und mit Larven anderer Korallenarten, um kollektive Reaktionen auf Stress zu koordinieren. Das ist nicht Stillstand – das ist Überlebensstrategie.",
+    "Das Faszinierendste: Korallen haben auch ein 'Gedächtnis' für Hitze. Wenn ein Riff mehrmals hintereinander Hitzestress erlebt, werden die Korallen resistenter gegen die nächste Episode. Sie können ihre symbiotischen Partner wechseln – nicht alle Zooxanthellen sind gleich; manche ertragen höhere Temperaturen. Ein gebleichtes Riff ist also nicht eine Zone des Todes, sondern eine Zone der Evolution in Echtzeit. Wenn wir aufhören, die Bedingungen zu verschärfen, kann das Riff zurückkommen. Das ist nicht Hoffnung – das ist Biologie."
   ],
-  "schon_gewusst": "Bienen demonstrieren das perfekt: Eine Larve, die ausschließlich Gelee Royale erhält, wird zur Königin – mit völlig anderer Körpergröße, Lebensdauer und Fortpflanzungskapazität. Doch ihre DNA ist identisch mit der Larve, die zur Arbeitsbiene wird. Reine epigenetische Umschaltung.",
-  "quelle": "Dutch Hunger Winter Famine Study (Roseboom et al.), Max-Planck-Institut für Molekulargenetik",
-  "quelle_url": "https://www.mpg.de/epigenetik",
-  "datum": "2026-04-07"
+  "schon_gewusst": "Korallen können bis zu 4000 Jahre alt werden – älter als die ägyptischen Pyramiden. Manche Kolonien sind älter als die gesamte menschliche Zivilisation, wie wir sie kennen.",
+  "quelle": "AIMS – Australian Institute of Marine Science: Coral Bleaching and Recovery Research",
+  "quelle_url": "https://www.aims.gov.au/research/monitoring-coral-bleaching",
+  "datum": "2026-04-08"
 }
