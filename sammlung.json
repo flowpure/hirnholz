@@ -293,5 +293,19 @@
     "quelle": "Mullainathan & Shafir: 'Scarcity: Why Having Too Little Means So Much' (Harvard University Press, 2013) basierend auf experimentellen Studien zur kognitiven Last bei Ressourcenknappheit",
     "quelle_url": "https://scholar.harvard.edu/mullainathan/publications",
     "datum": "2026-04-09"
+  },
+  {
+    "kategorie": "Verhaltensökonomie",
+    "titel": "Die Lüge der Prokrastination-Gene: Warum Aufschieberitis nicht in deiner DNA liegt, sondern in deiner emotionalen Regulierung",
+    "stauner": "Wir denken, manche Menschen sind einfach 'Aufschieber' – als wäre es eine angeborene Eigenschaft. Tatsächlich ist Prokrastination kein Zeichen mangelnder Willenskraft, sondern ein Zeichen dafür, dass unser Gehirn versucht, unangenehme Gefühle zu vermeiden. Und das Beste: Das lässt sich trainieren.",
+    "absaetze": [
+      "Die hartnäckigste Fehlannahme über Aufschieberitis ist, dass sie mit Faulheit oder mangelnder Disziplin zu tun hat. Psychologen haben diese These längst widerlegt: Prokrastination ist ein emotionales Regulierungsproblem, keine Motivationsstörung. Wenn wir eine Aufgabe aufschieben, vermeiden wir nicht die Arbeit selbst, sondern die negativen Gefühle, die damit verbunden sind – Langeweile, Angst, Unbehagen oder das Gefühl von Kontrollverlust.",
+      "Eine wegweisende Studie der Universität Tilburg zeigte: Menschen, die prokrastinieren, haben nicht weniger Selbstdisziplin als andere – sie haben nur stärkere negative emotionale Reaktionen auf die Aufgabe. Das Gehirn wählt dann die schnelle emotionale Erleichterung durch Aufschieben statt der langfristigen Zufriedenheit durch Erledigung. Das erklärt auch, warum derselbe Mensch bei Aufgaben, die ihm Freude bereiten, niemals prokrastiniert – egal wie schwierig sie sind.",
+      "Das Faszinierende: Da Prokrastination ein emotionales Phänomen ist, funktionieren klassische 'Willenskraft-Tipps' oft nicht. Stattdessen helfen emotionale Strategien enorm: Aufgaben in winzige, nicht-beängstigende Schritte aufteilen, die Arbeitsumgebung angenehm gestalten, oder sich selbst Mitleid statt Verachtung entgegenbringen. Studien zeigen, dass selbstmitfühlendes Denken die Prokrastination mesbar reduziert – weil es die emotionale Belastung senkt, die die Prokrastination auslöst."
+    ],
+    "schon_gewusst": "Menschen mit ADHS prokrastinieren nicht mehr als andere – aber aus einem anderen Grund: Bei ihnen ist nicht die emotionale Regulierung das Problem, sondern die Aktivierungsschwelle. Sie brauchen erst externe Reize (Deadline, Druck) um genug 'neurologischen Treibstoff' zu aktivieren. Deshalb funktionieren für sie völlig andere Strategien besser.",
+    "quelle": "Universität Tilburg – Forschung zu Prokrastination als emotionales Regulierungsproblem",
+    "quelle_url": "https://www.tilburguniversity.edu/research/institutes-and-research-groups/tiber",
+    "datum": "2026-04-10"
   }
 ]
