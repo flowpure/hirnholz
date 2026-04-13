@@ -377,5 +377,19 @@
     "quelle": "Walker, M., et al. (2017) - UC Berkeley Sleep and Neuroimaging Lab",
     "quelle_url": "https://www.sleepanddreamlab.org",
     "datum": "2026-04-12"
+  },
+  {
+    "kategorie": "Meeresbiologie",
+    "titel": "Die Lüge der passiven Schwämme: Warum Meeresbewohner nicht einfach filtern, sondern ihre Umwelt aktiv kontrollieren",
+    "stauner": "Wir denken, Schwämme sind passive Filteranlagen des Meeres. Doch neue Forschungen zeigen: Sie produzieren chemische Signale, die gezielt Mikroorganismen anlocken oder abstoßen, und beeinflussen damit das gesamte Ökosystem um sie herum.",
+    "absaetze": [
+      "Der klassische Schulunterricht vermittelt ein einfaches Bild: Schwämme öffnen ihre Poren, Wasser strömt durch, Plankton bleibt hängen, fertig. Diese passive Sicht ist grundlegend falsch. Forscher haben entdeckt, dass Schwämme aktiv Metaboliten (biochemische Stoffe) ausscheiden, die als Lockstoffe oder Abschreckungsmittel fungieren. Sie 'wählen' nicht nur zufällig, welche Organismen sie filtern – sie orchestrieren aktiv, welche Mikroben in ihre Kanäle eindringen dürfen und welche nicht.",
+      "Eine bahnbrechende Studie des Max-Planck-Instituts zeigte, dass Schwämme ihre chemische Signalgebung sogar an ihre Umgebung anpassen. Je nach Nährstoffverfügbarkeit im Wasser verändern sie ihre ausgeschiedenen Moleküle. Das ist keine passive Filtration – das ist ein molekulares Managementsystem. Schwämme kontrollieren damit nicht nur ihre eigene Nahrungsaufnahme, sondern prägen auch die Zusammensetzung der Mikrobenpopulation in ihrer direkten Umgebung und beeinflussen so die Chemie des Korallenriffes selbst.",
+      "Diese Erkenntnis verändert unser Verständnis des Ökosystems fundamental. Schwämme, lange als die 'stillen Arbeiter' des Meeres beschrieben, sind tatsächlich aktive Ingenieure ihrer Umwelt. Sie kommunizieren chemisch mit Millionen von Mikroorganismen gleichzeitig und formen damit ein eigenes mikrobiales Ökosystem, das für die Gesundheit des gesamten Riffs entscheidend ist. Was wir als einfache Filtration wahrnahmen, ist in Wahrheit ein hochkomplexes biologisches Informationssystem."
+    ],
+    "schon_gewusst": "Ein einzelner Schwamm kann täglich bis zu 20.000 Liter Wasser filtern – aber nicht passiv: Er verarbeitet dabei etwa 50 Kilogramm Biomasse und scheidet gezielt Nährstoffe aus, die andere Organismen brauchen, während er Konkurrenten chemisch abwehrt.",
+    "quelle": "Max-Planck-Institut für Marine Mikrobiologie – Abteilung Schwamm-Mikrobiologie",
+    "quelle_url": "https://www.mpi-bremen.de/",
+    "datum": "2026-04-13"
   }
 ]
