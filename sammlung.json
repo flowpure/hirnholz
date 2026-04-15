@@ -434,5 +434,19 @@
     "quelle": "Ariely, D. & Kahneman, D. (2012). Behavioral Economics and the Real World, Science Magazine & Center for Brain Science at Harvard University",
     "quelle_url": "https://scholar.harvard.edu/ariely",
     "datum": "2026-04-14"
+  },
+  {
+    "kategorie": "Materialwissenschaft",
+    "titel": "Die Lüge der ewigen Diamanten: Warum die 'wertvollsten' Steine der Erde langsam verdampfen",
+    "stauner": "Diamanten gelten als Inbegriff von Ewigkeit und Unvergänglichkeit – doch sie sind sterblich. Unter bestimmten Bedingungen oxidieren sie und verwandeln sich buchstäblich in Luft. Selbst im Museum können kostbare Steine langsam verschwinden.",
+    "absaetze": [
+      "Der Marketing-Slogan 'A Diamond is Forever' hat sich seit 1938 in unsere Köpfe gebrannt. Wir denken an Diamanten als ultimative Ewigkeit, als das Material, das Millionen Jahre überdauert und niemals altert. Diese Vorstellung ist nicht nur falsch – sie ist chemisch unmöglich. Diamanten sind metastabil. Das bedeutet: Sie befinden sich in einem energetisch ungünstigen Zustand und wollen eigentlich zu Graphit zurück, ihrer thermodynamisch stabilen Form.",
+      "Der Prozess verläuft normalerweise extrem langsam – bei Raumtemperatur würde es Billionen Jahre dauern. Aber unter bestimmten Bedingungen beschleunigt sich die Oxidation dramatisch. Diamanten können ab etwa 750 Grad Celsius in Luft einfach verbrennen und zu Kohlendioxid werden. Noch faszinierender: Diamanten an der Erdoberfläche werden durch UV-Strahlung und Sauerstoff oberflächlich oxidiert. Ein Diamant in einem Museumsschaukasten verliert täglich mikroskopisch kleine Schichten seiner Oberfläche – er verdampft wortwörtlich in Luft auf.",
+      "Archäologen und Schmuckexperten kennen dieses Phänomen längst. Historische Diamanten in europäischen Kronsammlungen zeigen messbare Massenanforderungen über Jahrhunderte. Das berühmteste Beispiel ist der Koh-i-Noor-Diamant, der nachweislich an Masse und Gewicht abgenommen hat, seit er in europäischem Besitz ist. Nicht durch Schleifen – sondern durch Oxidation. Ein Diamant ist nicht ewig. Er ist nur sehr, sehr langlebig. Und unter den richtigen – oder besser: falschen – Bedingungen kann selbst der wertvollste Schmuck des Planeten zu Staub werden."
+    ],
+    "schon_gewusst": "Graphit, die 'schwache' Schwester des Diamanten, ist thermodynamisch stabiler und wird sich niemals von selbst zu Diamant umwandeln – Diamanten wollen aber gerne zu Graphit zurück. Das macht Diamanten zu einer Art Zeitbombe in chemischer Zeitlupe.",
+    "quelle": "Smithsonian Institution – Department of Mineral Sciences: Diamond Oxidation and Surface Degradation Studies",
+    "quelle_url": "https://www.si.edu/research/departments/mineral-sciences",
+    "datum": "2026-04-15"
   }
 ]
