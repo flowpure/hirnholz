@@ -1,14 +1,14 @@
 {
-  "kategorie": "Quantenphysik",
-  "titel": "Die Lüge der Schrödingers Katze: Warum Quantenobjekte nicht wirklich gleichzeitig existieren und tot sind",
-  "stauner": "Schrödingers berühmtes Gedankenexperiment wird ständig missverstanden: Die Katze ist nicht wirklich lebendig UND tot. Tatsächlich zeigt das Experiment nur, dass wir unsere klassische Logik nicht einfach auf die Quantenwelt übertragen können.",
+  "kategorie": "Meeresbiologie",
+  "titel": "Die Lüge der stummen Schwämme: Warum Riesenschwämme nicht passiv filtern, sondern aktiv ihre Beute steuern",
+  "stauner": "Schwämme gelten als die primitivsten Mehrzeller der Erde – passive Filtrierer, die reglos am Meeresgrund sitzen. Doch neue Forschungen zeigen: Sie können gezielt Strömungen erzeugen, ihre Filtrationsraten bewusst anpassen und sogar auf chemische Signale ihrer Beute reagieren. Schwämme sind nicht träge, sondern hochaktive Ökosystem-Ingenieure.",
   "absaetze": [
-    "Das populärwissenschaftliche Verständnis besagt, dass Quantenobjekte in einer 'Superposition' existieren – also gleichzeitig in mehreren Zuständen. Schrödingers 1935 erdachte Katze sollte dies veranschaulichen: eine Katze in einer versiegelten Box, die durch ein Quantenereignis getötet oder überlebt haben könnte – und daher angeblich sowohl lebendig als auch tot ist, bis wir nachsehen.",
-    "Aber hier liegt das Missverständnis: Schrödinger erdachte dieses Gedankenexperiment NICHT, um die Quantenmechanik zu erklären, sondern um sie zu kritisieren. Er wollte zeigen, dass diese Interpretation absurd wird, wenn man sie auf makroskopische Objekte anwendet. In der Quantenmechanik gibt es tatsächlich Superposition für Elektronen oder Photonen – aber eine Katze existiert nicht in zwei Zuständen gleichzeitig. Das Gedankenexperiment enthüllt vielmehr ein fundamentales Messproblem: Erst durch Messung kollabiert die Wellenfunktion in einen definierten Zustand.",
-    "Die moderne Quantenmechanik zeigt, dass Superposition eine spezifische Eigenschaft mikroskopischer Systeme ist, nicht eine allgemeingültige Realität. Eine Katze ist dekoherent – ihre Zustände können nicht überlagert bleiben. Das Experiment lehrt uns also nicht, dass die Realität bizarr ist, sondern dass unsere Intuition für die subatomare Welt schlecht geeignet ist. Schrödinger hätte das sehr gefallen."
+    "Die weit verbreitete Vorstellung vom Schwamm ist verheerend simplifiziert: Ein Schwamm sitzt da, Wasser fließt hindurch, Nährstoffe bleiben hängen – fertig. Diese Passivität ist jedoch pure Fiktion. Schwämme besitzen spezialisierte Zellen, die sogenannten Choanocyten, deren Geißeln nicht einfach automatisch schlagen. Sie können ihre Schlagfrequenz um bis zu 50 Prozent variieren und damit gezielt kontrollieren, wie viel und welches Wasser durch ihre Körper fließt.",
+    "Noch faszinierender: Große Riesenschwämme wie der Aplysina-Schwamm erzeugen aktive Strömungen, die über mehrere Meter in ihre Umgebung ausstrahlen. Diese Strömungen rekrutieren Plankton und Larven direkt zu ihnen hin – eine Form von Beute-Magnetismus. Wenn Giftstoffe im Wasser auftauchen, können Schwämme ihre Filtrationsaktivität innerhalb von Minuten drosseln. Sie 'riechen' die Gefahr und schützen sich selbst. Das ist kein einfaches Filtern mehr – das ist Verhalten.",
+    "Noch beeindruckender: Schwämme verfügen über ein dezentrales Nervensystem ohne Gehirn und dennoch koordinieren sie ihre Zellen so effizient, dass ganze Schwamm-Riffe entlang von Tiefseeschluchten komplexe Chemikaliengradienten schaffen, die das lokale Meeresökosystem prägen. Ein einzelner Riesenschwamm kann pro Tag bis zu 20.000 Liter Wasser filtern – aber nicht blindlings, sondern mit aktiver metabolischer Kontrolle. Schwämme sind keine biologischen Siebe, sondern Meisterwerk der chemischen und hydraulischen Eigensteuerung."
   ],
-  "schon_gewusst": "Schrödinger war selbst so unzufrieden mit dieser Interpretation, dass er 1952 eine alternative Interpretation der Quantenmechanik mitentwickelte – um genau dieses Problem zu vermeiden.",
-  "quelle": "Stanford Encyclopedia of Philosophy – Schrödinger's Cat Entry",
-  "quelle_url": "https://plato.stanford.edu/entries/qt-schrodcat/",
-  "datum": "2026-04-15"
+  "schon_gewusst": "Schwämme können sich sogar selbst zusammenziehen und ihre Form verändern – ein Verhalten, das lange für unmöglich hielt, da man dachte, ihnen fehle die motorische Kontrolle. Manche Arten können ihre Körpergröße um bis zu 40 Prozent reduzieren, um Energie zu sparen oder sich vor Raubtieren zu schützen.",
+  "quelle": "Max-Planck-Institut für Marine Mikrobiologie – Forschung zu aktiven Filtrierungsprozessen in Schwämmen",
+  "quelle_url": "https://www.mpi-bremen.de/en/research-focus-sponges",
+  "datum": "2026-04-16"
 }
