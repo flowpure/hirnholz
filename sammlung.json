@@ -490,5 +490,19 @@
     "quelle": "Max Planck Institute für empirische Ästhetik – Metaanalyse zu Spiegelzellen und Empathie (2023)",
     "quelle_url": "https://www.aesthetics.mpg.de/",
     "datum": "2026-04-16"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Hirnmasse: Warum intelligente Menschen nicht größere Gehirne haben",
+    "stauner": "Wir nehmen an, dass ein größeres Gehirn intelligenter macht. Doch die Wissenschaft zeigt: Die Gehirngröße korreliert kaum mit IQ. Was wirklich zählt, sind Verbindungen zwischen den Neuronen – nicht das Volumen.",
+    "absaetze": [
+      "Jahrhundertelang maßen Wissenschaftler Gehirne von verstorbenen Menschen und suchten nach dem 'Beweis' für Intelligenz. Die Annahme war logisch: Größer = bessere Leistung. Doch als standardisierte IQ-Tests im 20. Jahrhundert verfügbar wurden, zeigte sich die unbequeme Wahrheit. Die Korrelation zwischen Gehirnvolumen und Intelligenz liegt bei lediglich 0,3 bis 0,4 – statistisch fast irrelevant. Ein Mensch mit einem überdurchschnittlich großen Gehirn kann weniger intelligent sein als jemand mit einem kleineren Gehirn.",
+      "Die echte Erklärung liegt in der Architektur, nicht in der Größe. Hochintelligente Menschen haben mehr graue Substanz in spezifischen Regionen – besonders im präfrontalen Kortex. Noch wichtiger: Sie haben mehr weiße Substanz, die Axone (Verbindungskabel zwischen Neuronen) bildet. Es geht nicht darum, wie viele Bausteine du hast, sondern wie effizient sie vernetzt sind. Ein dichtes Netzwerk von Verbindungen ermöglicht schnellere Verarbeitung und komplexeres Denken.",
+      "Ein faszinierendes Detail: Neandertaler hatten durchschnittlich größere Gehirne als moderne Menschen – etwa 10 bis 15 Prozent größer. Das hielt sie nicht davon ab, von weniger 'volumigen' Homo sapiens verdrängt zu werden. Der Unterschied lag in der Gehirnorganisation, nicht in der rohen Masse. Dies zeigt, dass Evolution Effizienz bevorzugt – ein optimiertes Netzwerk schlägt Rohmasse jedes Mal."
+    ],
+    "schon_gewusst": "Albert Einsteins Gehirn wog etwa 1.230 Gramm – leicht unter dem Durchschnitt von 1.400 Gramm. Seine außergewöhnliche Intelligenz lag in der ungewöhnlichen Struktur seiner Gehirnlappen und ihrer Vernetzung.",
+    "quelle": "Nature Neuroscience - \"Brain volume and intelligence in the general population\"",
+    "quelle_url": "https://www.nature.com/articles/nn.2322",
+    "datum": "2026-04-17"
   }
 ]
