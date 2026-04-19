@@ -560,5 +560,19 @@
     "quelle": "George Mason University – Anchoring Effects in Behavioral Economics (2017)",
     "quelle_url": "https://www.gmu.edu",
     "datum": "2026-04-19"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Rechtshänder-Überlegenheit: Warum Linkshänder neurologisch flexibler sind",
+    "stauner": "Linkshänder gelten oft als unbeholfene Exoten in einer Rechtshänder-Welt. Doch neurowissenschaftliche Studien zeigen: Ihre Gehirne sind asymmetrischer organisiert und nutzen beide Hirnhälften intensiver. Das macht sie in bestimmten kognitiven Bereichen nicht benachteiligt, sondern neurologisch vorteilhaft.",
+    "absaetze": [
+      "Die hartnäckigste Fehlannahme über Linkshänder ist, dass sie in einer 'für Rechtshänder gebauten Welt' neurologisch benachteiligt sind. Tatsächlich zeigt die Neuroimaging-Forschung etwas völlig anderes: Linkshänder haben eine weniger spezialisierte Hemisphärenlateralisierung. Das bedeutet, dass ihre kognitiven Funktionen – besonders Sprache und räumliches Denken – gleichmäßiger auf beide Hirnhälften verteilt sind. Diese neurologische Flexibilität ist keine Schwäche, sondern eine strukturelle Besonderheit.",
+      "Studien der University of California zeigen, dass Linkshänder mit Hirnverletzungen oft bessere Chancen auf Rehabilitation haben als Rechtshänder – genau weil ihre kognitiven Funktionen weniger lokal konzentriert sind. Wenn die linke Hemisphäre beschädigt ist, kann die rechte mehr Aufgaben übernehmen. Bei Rechtshändern ist diese neuronale Redundanz deutlich geringer, weil Sprache und motorische Kontrolle stark links konzentriert sind. Linkshänder zahlen also nicht den vermeintlichen 'Preis' der Rechtshänder-Dominanz – sie profitieren von größerer neurologischer Flexibilität.",
+      "Interessanterweise zeigen sich auch kognitive Vorteile: Linkshänder schneiden bei Tests zur visuellen Raumverarbeitung und kreativen Problemlösung überdurchschnittlich ab. Das liegt nicht daran, dass sie 'kreativer geboren' werden, sondern daran, dass ihre beiden Hirnhälften ständig intensiver miteinander kommunizieren. Die vermeintliche Unbeholfenheit in einer Rechtshänder-Umgebung ist ein soziales Problem, nicht ein neurologisches."
+    ],
+    "schon_gewusst": "Etwa 12% der Weltbevölkerung ist linkshändig – und dieser Anteil ist über Jahrtausende stabil geblieben, obwohl der biologische Nachteil minimal ist. Das deutet darauf hin, dass die Natur Linkshändigkeit aus einem Grund bewahrt hat.",
+    "quelle": "University of California, Institute for Brain and Intelligence – 'Hemispheric Lateralization in Left-Handers'",
+    "quelle_url": "https://psychology.ucla.edu/research/neuroscience-cognition",
+    "datum": "2026-04-19"
   }
 ]
