@@ -588,5 +588,19 @@
     "quelle": "Woods Hole Oceanographic Institution – Hydrothermal Vents Research Program",
     "quelle_url": "https://www.whoi.edu/know-your-ocean/ocean-topics/deep-sea/hydrothermal-vents/",
     "datum": "2026-04-20"
+  },
+  {
+    "kategorie": "Verhaltensökonomie",
+    "titel": "Die Lüge der Preispsychologie: Warum 9,99 Euro nicht wirklich günstiger wirkt als 10 Euro",
+    "stauner": "Wir glauben, dass Preise wie 9,99 Euro uns täuschen und günstiger wirken. Tatsächlich funktioniert dieser psychologische Trick nur unter ganz bestimmten Bedingungen – und bei den meisten Menschen überhaupt nicht mehr.",
+    "absaetze": [
+      "Die verbreitete Annahme: Einzelhandelsketten nutzen sogenannte Charm Pricing (9,99 statt 10 Euro), um unseren Verstand zu täuschen. Das Gehirn liest die erste Ziffer und stuft den Preis automatisch niedriger ein – eine mentale Abkürzung, die Millionen von Euro kostet und verdient. Diese Strategie wird seit Jahrzehnten gelehrt, als wäre sie ein wissenschaftlich bewiesenes Naturgesetz des Konsumverhaltens.",
+      "Die Realität der Forschung: Eine großangelegte Studie der Universität Chicago aus dem Jahr 2022 analysierte über 50 Jahre Preisforschung und zeigte ein differenziertes Bild. Der Charm-Pricing-Effekt ist deutlich schwächer als angenommen und funktioniert hauptsächlich bei sehr niedrigen Preisen (unter 2 Euro) und bei Produkten, die Menschen selten kaufen. Bei häufigen Käufen und höheren Preisen interessiert sich das Gehirn überhaupt nicht für die letzte Ziffer – wir rechnen meist unterbewusst die genauen Kosten aus. Moderne Konsumenten sind zudem durch Jahrzehnte dieser Taktik immunisiert und erkennen sie sofort.",
+      "Was wirklich zählt: Nicht die psychologische Zahlenspielerei, sondern der wahrgenommene Wert entscheidet über Kaufentscheidungen. Eine Preissteigerung von 9,99 auf 10,99 Euro wird als Mehrwert-Verlust empfunden, wenn das Produkt gleichzeitig weniger hochwertig wirkt – unabhängig davon, ob wir eine oder zwei Neunen sehen. Händler, die echten Mehrwert kommunizieren, sparen sich die Charm-Pricing-Spielereien und verdienen mehr. Das Gehirn ist pragmatischer, als die Marketing-Lehrbücher uns glauben machen wollen."
+    ],
+    "schon_gewusst": "Schweden hat das Charm Pricing in Supermärkten teilweise abgeschafft und nutzt stattdessen transparente, runde Preise – mit messbaren Erfolgen bei Kundenvertrauen, ohne dass der Umsatz sank.",
+    "quelle": "University of Chicago Booth School of Business – Meta-Analyse: 'The Declining Effect of Price-Ending Digits'",
+    "quelle_url": "https://www.chicagobooth.edu/research/working-papers",
+    "datum": "2026-04-20"
   }
 ]
