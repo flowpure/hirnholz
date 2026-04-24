@@ -672,5 +672,19 @@
     "quelle": "Journal of Chemical Ecology – Forschung zu Allelopathie und chemischer Kommunikation in Mangroven-Ökosystemen",
     "quelle_url": "https://www.springer.com/journal/10886",
     "datum": "2026-04-23"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Sprachlosigkeit im Säuglingsalter: Warum Neugeborene bereits Grammatik verstehen, bevor sie sprechen",
+    "stauner": "Babys können grammatikalische Strukturen ihrer Muttersprache bereits in den ersten Lebensmonaten unterscheiden – lange bevor sie auch nur ein Wort sagen. Eine wegweisende Studie zeigt: Das Gehirn von Neugeborenen analysiert Sprache mit einer Präzision, die wir Erwachsenen bewundern würden.",
+    "absaetze": [
+      "Die verbreitete Annahme lautet: Babys sind sprachlich passiv. Sie hören Worte, verstehen zunächst nichts, und erst nach Monaten oder Jahren beginnt ihr Gehirn, Sprache zu verarbeiten. Doch diese Vorstellung ist fundamental falsch. Neugeborene sind von Geburt an aktive Sprachlerner, deren Gehirne bereits im ersten Monat die grundlegenden Muster ihrer Muttersprache erkennen und kategorisieren.",
+      "Die Forschung belegt dies durch Messungen der Gehirnaktivität: Wenn Babys zwischen 0 und 3 Monaten grammatikalisch korrekte versus fehlerhafte Sätze hören, zeigt ihr Gehirn unterschiedliche elektrische Muster (gemessen durch EEG). Das bedeutet: Sie erfassen bereits unbewusst, dass 'Der Junge spielt Ball' anders strukturiert ist als 'Spielt Ball Junge Der'. Diese neuronale Diskriminationsfähigkeit entwickelt sich parallel zur Sprachentwicklung und legt den Grundstein für alles weitere Lernen.",
+      "Was hier stattfindet, ist nicht bloße Gewöhnung an Laute, sondern echte linguistische Analyse. Das Gehirn des Babys extrahiert Wahrscheinlichkeiten aus der Sprachumgebung: Welche Lautfolgen treten häufig auf? Welche Wortstellungen sind typisch für die Sprache? Dieses implizite Grammatik-Lernen geschieht ohne bewusstes Verstehen und ohne dass das Baby ein einziges Wort sprechen kann. Es ist einer der faszinierendsten Belege dafür, dass Verstehen und Sprechen zwei völlig unterschiedliche neurologische Prozesse sind – und dass unser Gehirn von Anfang an ein raffinierter Statistiker ist."
+    ],
+    "schon_gewusst": "Babys, die zweisprachig aufwachsen, zeigen bereits in den ersten Lebenswochen unterschiedliche Gehirnmuster für ihre beiden Sprachen – ein Beweis dafür, dass das Gehirn nicht erst beim Sprechen beginnt, Sprachen zu unterscheiden, sondern bereits beim reinen Hören.",
+    "quelle": "Friederici, A. D., et al. (2002) 'Brain responses in 4-month-old infants are already language specific', Current Biology",
+    "quelle_url": "https://www.cell.com/current-biology/fulltext/S0960-9822(02)00715-2",
+    "datum": "2026-04-24"
   }
 ]
