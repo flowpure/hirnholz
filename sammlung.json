@@ -700,5 +700,19 @@
     "quelle": "Schmidt-Ott Institute for Ocean Research, Max Planck Institute – Langzeitstudien zu Wal-Cadaver-Ökosystemen (2019-2024)",
     "quelle_url": "https://www.mpi-bremen.de/",
     "datum": "2026-04-24"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Sprachlosigkeit im Mutterleib: Warum das fetale Gehirn bereits Sprache verarbeitet, lange bevor das Baby geboren wird",
+    "stauner": "Wir denken, Neugeborene kommen als unbeschriebenes Blatt zur Welt. Doch das menschliche Gehirn beginnt bereits im Mutterleib, die Sprachmuster der Mutter zu analysieren und zu speichern. Babys erkennen die Muttersprache bereits bei der Geburt.",
+    "absaetze": [
+      "Die verbreitete Annahme lautet: Spracherwerb beginnt nach der Geburt, wenn das Neugeborene zum ersten Mal Laute hört. Aber die Realität ist spektakulärer: Ab etwa der 24. Schwangerschaftswoche reagiert das fetale Gehirn bereits auf auditive Reize. Die Fruchtblase wirkt nicht als Schalldämpfer, sondern als akustischer Filter – tiefe Frequenzen dringen durch, besonders die Stimme der Mutter.",
+      "Forscher der University of Helsinki zeigten 2013 in einer bahnbrechenden Studie, dass Neugeborene schon 4 Tage nach der Geburt zwischen ihrer Muttersprache und anderen Sprachen unterscheiden können. Das ist möglich, weil ihr Gehirn bereits pränatale Sprachmuster gelernt hat. Sie erkannten spezifische phonetische Muster, Rhythmen und Intonationen, die sie im Mutterleib gehört hatten. Selbst Babys von gehörlosen Müttern zeigen diesen Effekt nicht – es geht um die sprachliche Struktur, nicht um emotionale Bindung.",
+      "Das Erstaunliche: Dieses pränatale Sprachlernen verschwindet nicht – es bildet das Fundament für alle späteren Sprachfähigkeiten. Babys, die im Mutterleib regelmäßig einer zweiten Sprache ausgesetzt waren, zeigen später eine verbesserte Fähigkeit, diese Sprache zu lernen. Das menschliche Gehirn nutzt also die gesamte Schwangerschaft als stille Schule, in der es die akustischen Grundlagen seiner linguistischen Welt abspeichert."
+    ],
+    "schon_gewusst": "Ein ungeborenes Kind reagiert nicht nur auf Sprache – es reagiert auch auf Musik. Studien zeigen, dass Babys Melodien wiedererkennen, die ihre Mutter während der Schwangerschaft regelmäßig gehört hat, und beruhigen sich, wenn sie diese Musik nach der Geburt wieder hören.",
+    "quelle": "University of Helsinki - Studie zur pränatalen Sprachdiskrimination (Partanen et al., 2013)",
+    "quelle_url": "https://www.pnas.org/doi/10.1073/pnas.1302159110",
+    "datum": "2026-04-25"
   }
 ]
