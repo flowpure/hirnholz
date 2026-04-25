@@ -714,5 +714,19 @@
     "quelle": "University of Helsinki - Studie zur pränatalen Sprachdiskrimination (Partanen et al., 2013)",
     "quelle_url": "https://www.pnas.org/doi/10.1073/pnas.1302159110",
     "datum": "2026-04-25"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der trägen Gluten: Warum Gehirnzellen nicht einfach Stützgerüste sind, sondern aktive Denker",
+    "stauner": "Wir dachten lange, dass Gliazellen nur passive Stützkonstruktionen im Gehirn sind. Neue Forschung zeigt: Sie treffen eigenständig Entscheidungen, kommunizieren mit Neuronen und kontrollieren sogar, wann Synapsen aktiv werden.",
+    "absaetze": [
+      "Jahrzehntelang behandelten Neurowissenschaftler Gliazellen wie das Baugerüst eines Theaters—wichtig für die Struktur, aber nicht für die Aufführung verantwortlich. Etwa 90% aller Gehirnzellen sind Gliazellen (Astrozyten, Oligodendrozyten, Mikroglia), doch sie galten als biologisch inert. Die Neuronen, so die gängige Meinung, würden die eigentliche kognitive Arbeit leisten.",
+      "Die Realität ist fundamental anders. Astrozyten können aktiv bestimmen, welche Synapsenverbindungen verstärkt werden und welche verkümmern—ein Prozess, den wir früher Neuronen zuschrieben. Mikrogliale Zellen 'trimmen' permanent das Gehirn, indem sie tote oder überflüssige Synapsen aufräumen. Noch erstaunlicher: Gliente können spontan elektrische Signale erzeugen und mit Neuronen kommunizieren, ohne dass äußere Reize dies auslösen. Sie sind nicht Zuschauer, sondern Co-Akteure der Gedankenbildung.",
+      "Diese Erkenntnis ändert unser Verständnis von Lernprozessen, Gedächtnis und sogar psychischen Erkrankungen. Wenn Gliazellen nicht richtig funktionieren, können Depressionen, Schizophrenie oder Autismus entstehen—nicht weil Neuronen fehlerhaft sind, sondern weil ihre 'stillen Partner' nicht ihre Aufgabe erfüllen. Das Gehirn ist kein neuronales Netzwerk mit Glien als Statisten, sondern eine echte Partnerschaft zwischen zwei verschiedenen Zelltypen, die gemeinsam denken."
+    ],
+    "schon_gewusst": "Eine einzelne Astrozyte kann gleichzeitig mit bis zu 100.000 Synapsen kommunizieren—das ist eine komplexere Netzwerkfähigkeit als die meisten Neuronen besitzen.",
+    "quelle": "Allen Institute for Brain Science & Nature Neuroscience",
+    "quelle_url": "https://www.nature.com/articles/nn.4576",
+    "datum": "2026-04-25"
   }
 ]
