@@ -73,31 +73,71 @@
   .band-motto{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.85)}
   .band-date{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);color:rgba(255,255,255,0.6);letter-spacing:.08em}
   /* ── Sammlung Menü ── */
-  .nav-menu{position:relative;display:inline-block}
-  .nav-btn{font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);font-weight:600;letter-spacing:.15em;text-transform:uppercase;background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.85);padding:.35rem .9rem;cursor:pointer;transition:all .2s;border-radius:2px;display:flex;align-items:center;gap:.4rem}
-  .nav-btn:hover{background:rgba(255,255,255,0.15)}
-  .nav-arrow{font-size:.5rem;transition:transform .2s;display:inline-block}
-  .nav-btn.open .nav-arrow{transform:rotate(180deg)}
-  .nav-dropdown{
-    display:none;
-    position:fixed;
-    top:auto;
-    right:clamp(.75rem,3vw,1.5rem);
-    background:#1a1a14;
-    border:1px solid rgba(255,255,255,0.15);
-    min-width:clamp(180px,50vw,260px);
-    max-width:calc(100vw - 2rem);
-    z-index:200;
-    animation:dropIn .15s ease;
-    box-shadow:0 4px 24px rgba(0,0,0,0.4);
+  /* ── Hamburger & Sidebar ── */
+  .nav-hamburger{
+    background:none;border:none;cursor:pointer;
+    color:#f5f0e4;font-size:1.3rem;line-height:1;
+    padding:.25rem .4rem;display:flex;align-items:center;
+    transition:opacity .2s;
   }
-  .nav-dropdown.open{display:block}
-  @keyframes dropIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-  .nav-dropdown-header{font-family:var(--sans);font-size:clamp(.5rem,.7vw,.58rem);letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,0.6);padding:.75rem 1rem .4rem}
-  .nav-dropdown a{display:block;font-family:var(--sans);font-size:clamp(.6rem,.9vw,.7rem);color:#f5f0e4;text-decoration:none;padding:.5rem 1rem;transition:all .15s;letter-spacing:.05em}
-  .nav-dropdown a:hover{background:rgba(255,255,255,0.12);color:#fff}
-  .nav-dropdown-divider{height:1px;background:rgba(255,255,255,0.08);margin:.25rem 0}
-  .nav-dropdown-all{color:#52b788 !important;font-weight:600}
+  .nav-hamburger:hover{opacity:.7}
+
+  .nav-overlay{
+    display:none;position:fixed;inset:0;
+    background:rgba(0,0,0,0.5);z-index:299;
+    backdrop-filter:blur(2px);
+  }
+  .nav-overlay.open{display:block}
+
+  .nav-sidebar{
+    position:fixed;top:0;right:-320px;width:min(300px,85vw);height:100vh;
+    background:#1a1a14;z-index:300;
+    transition:right .28s cubic-bezier(.4,0,.2,1);
+    display:flex;flex-direction:column;
+    box-shadow:-4px 0 24px rgba(0,0,0,0.4);
+    overflow:hidden;
+  }
+  .nav-sidebar.open{right:0}
+
+  .nav-sidebar-head{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:1.25rem 1.25rem 1rem;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    flex-shrink:0;
+  }
+  .nav-sidebar-title{
+    font-family:var(--sans);font-size:clamp(.55rem,.8vw,.65rem);
+    font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+    color:#52b788;
+  }
+  .nav-close{
+    background:none;border:none;color:rgba(255,255,255,0.5);
+    font-size:1.2rem;cursor:pointer;line-height:1;padding:.2rem;
+    transition:color .15s;
+  }
+  .nav-close:hover{color:#fff}
+
+  .nav-sidebar-body{
+    flex:1;overflow-y:auto;padding:.5rem 0 1rem;
+  }
+  .nav-sidebar-body::-webkit-scrollbar{width:4px}
+  .nav-sidebar-body::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:2px}
+
+  .nav-sidebar-body a{
+    display:block;font-family:var(--sans);
+    font-size:clamp(.7rem,1.1vw,.8rem);
+    color:#f5f0e4;text-decoration:none;
+    padding:.6rem 1.25rem;transition:background .15s;
+    letter-spacing:.04em;
+  }
+  .nav-sidebar-body a:hover{background:rgba(255,255,255,0.07);color:#fff}
+  .nav-sidebar-divider{height:1px;background:rgba(255,255,255,0.08);margin:.4rem 0}
+  .nav-sidebar-all{color:#52b788 !important;font-weight:600;border-top:1px solid rgba(255,255,255,0.08);margin-top:.25rem}
+  .nav-sidebar-section{
+    font-family:var(--sans);font-size:clamp(.48rem,.68vw,.55rem);
+    letter-spacing:.22em;text-transform:uppercase;
+    color:rgba(255,255,255,0.3);padding:.75rem 1.25rem .25rem;
+  }
 
   /* ── Theme & Lang Switches ── */
   .switches{display:flex;align-items:center;gap:.5rem}
@@ -274,13 +314,18 @@
 <header class="masthead">
   <div class="masthead-inner">
     <div class="m-top">
-      <a href="/" class="m-tag" id="js-m-tag" style="text-decoration:none;cursor:pointer;">✦ Hirnholz — tägliche Edition</a>
-      <span class="m-date-top" id="js-date-top"></span>
-      <div class="switches">
-        <button class="switch-btn" id="js-theme-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
-        <button class="lang-switch-btn" id="js-lang-btn" onclick="toggleLang()">
-          <span id="js-lang-icon">🌐</span><span id="js-lang-label">DE</span>
-        </button>
+      <div style="display:flex;align-items:center;gap:.75rem">
+        <button class="nav-hamburger" onclick="toggleNav()" aria-label="Sammlung öffnen" id="js-nav-btn">☰</button>
+        <a href="/" class="m-tag" id="js-m-tag" style="text-decoration:none;cursor:pointer;">✦ Hirnholz — tägliche Edition</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+        <span class="m-date-top" id="js-date-top"></span>
+        <div class="switches">
+          <button class="switch-btn" id="js-theme-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌙</button>
+          <button class="lang-switch-btn" id="js-lang-btn" onclick="toggleLang()">
+            <span id="js-lang-icon">🌐</span><span id="js-lang-label">DE</span>
+          </button>
+        </div>
       </div>
     </div>
     <div class="m-title-row">
@@ -295,17 +340,20 @@
     <span class="band-motto" id="js-band-motto">Jeden Morgen um 5:00 Uhr eine Erkenntnis — bereichernd, begeisternd und wissenschaftlich belegt.</span>
     <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
       <span class="band-date" id="js-date-band"></span>
-      <div class="nav-menu">
-        <button class="nav-btn" id="js-nav-btn" onclick="toggleNav()">
-          <span id="js-nav-btn-text">Die Sammlung</span> <span class="nav-arrow">▼</span>
-        </button>
-        <div class="nav-dropdown" id="js-nav-dropdown">
-          <div class="nav-dropdown-header" id="js-nav-header">Nach Kategorie</div>
-          <div id="js-nav-categories"><a href="sammlung.html">Alle Geschichten laden…</a></div>
-          <div class="nav-dropdown-divider"></div>
-          <a href="sammlung.html" class="nav-dropdown-all" id="js-nav-all">✦ Gesamte Sammlung →</a>
-        </div>
-      </div>
+  <!-- Sidebar overlay -->
+  <div class="nav-overlay" id="js-nav-overlay" onclick="closeNav()"></div>
+  <nav class="nav-sidebar" id="js-nav-sidebar">
+    <div class="nav-sidebar-head">
+      <span class="nav-sidebar-title" id="js-nav-header">✦ Die Sammlung</span>
+      <button class="nav-close" onclick="closeNav()">✕</button>
+    </div>
+    <div class="nav-sidebar-body">
+      <div class="nav-sidebar-section" id="js-nav-section">Nach Kategorie</div>
+      <div id="js-nav-categories"><a href="sammlung.html">Laden…</a></div>
+      <div class="nav-sidebar-divider"></div>
+      <a href="sammlung.html" class="nav-sidebar-all" id="js-nav-all">✦ Gesamte Sammlung →</a>
+    </div>
+  </nav>
     </div>
   </div>
 </div>
@@ -795,33 +843,19 @@ function render_unused(story) {
 
 /* ── Navigation Menü ── */
 function toggleNav() {
-  const btn = document.getElementById('js-nav-btn');
-  const dropdown = document.getElementById('js-nav-dropdown');
-  const isOpen = dropdown.classList.contains('open');
-
-  if (!isOpen) {
-    // Position dropdown below button, right-aligned, never off-screen
-    const rect = btn.getBoundingClientRect();
-    dropdown.style.top = (rect.bottom + 6) + 'px';
-    const dropW = Math.min(260, window.innerWidth - 24);
-    const rightPos = Math.max(12, window.innerWidth - rect.right);
-    dropdown.style.right = rightPos + 'px';
-    dropdown.style.minWidth = dropW + 'px';
-  }
-
-  btn.classList.toggle('open');
-  dropdown.classList.toggle('open');
+  document.getElementById('js-nav-sidebar').classList.toggle('open');
+  document.getElementById('js-nav-overlay').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('js-nav-sidebar').classList.contains('open') ? 'hidden' : '';
 }
 
-// Schließe bei Klick außerhalb
-document.addEventListener('click', e => {
-  if (!e.target.closest('.nav-menu')) {
-    document.getElementById('js-nav-btn')?.classList.remove('open');
-    document.getElementById('js-nav-dropdown')?.classList.remove('open');
-  }
-});
+function closeNav() {
+  document.getElementById('js-nav-sidebar').classList.remove('open');
+  document.getElementById('js-nav-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
 
-// Lade Kategorien aus sammlung.json
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
+
 async function loadNavCategories() {
   try {
     const res = await fetch('sammlung.json?v=' + new Date().toISOString().slice(0,10));
@@ -831,9 +865,10 @@ async function loadNavCategories() {
 
     const cats = [...new Set(stories.map(s => s.kategorie).filter(Boolean))].sort();
     const container = document.getElementById('js-nav-categories');
-    container.innerHTML = cats.map(cat =>
-      `<a href="sammlung.html#${encodeURIComponent(cat)}">${cat} <span style="opacity:.4;font-size:.85em">(${stories.filter(s=>s.kategorie===cat).length})</span></a>`
-    ).join('');
+    container.innerHTML = cats.map(cat => {
+      const count = stories.filter(s => s.kategorie === cat).length;
+      return `<a href="sammlung.html#${encodeURIComponent(cat)}" onclick="closeNav()">${cat}<span style="opacity:.35;font-size:.85em;margin-left:.4rem">${count}</span></a>`;
+    }).join('');
   } catch {}
 }
 
