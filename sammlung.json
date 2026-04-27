@@ -770,5 +770,19 @@
     "quelle": "Anemone Behavior and Nematocyst Discharge Research - Max Planck Institute for Marine Microbiology",
     "quelle_url": "https://www.mpi-bremen.de/research/groups/chemotaxis-and-oxygen-dynamics",
     "datum": "2026-04-27"
+  },
+  {
+    "kategorie": "Neurologie",
+    "titel": "Die Lüge der Hirnerschöpfung: Warum mentale Ermüdung nicht biologisch ist, sondern eine emotionale Illusion",
+    "stauner": "Wir glauben, dass intensive Denkarbeit unser Gehirn 'erschöpft' – aber Neurowissenschaftler finden keine biologischen Marker für mentale Ermüdung. Was wir Hirnerschöpfung nennen, ist tatsächlich ein psychologisches Phänomen: unser Gehirn signalisiert uns, dass weiteres Arbeiten unangenehm wird – nicht, dass es unmöglich ist.",
+    "absaetze": [
+      "Die verbreitete Annahme besagt, dass konzentriertes Denken unsere kognitiven Ressourcen aufbraucht wie ein Akku, der sich entleert. Nach dieser Logik sollten lange Arbeitstage zu messbaren Veränderungen im Gehirn führen – weniger Glukose, niedrigere Neurotransmitter-Level, verminderte neuronale Aktivität. Doch wenn Neurowissenschaftler diese Parameter messen, finden sie genau das nicht. Das Gehirn eines erschöpften Arbeiters unterscheidet sich biochemisch kaum von dem eines ausgeruhten.",
+      "Was tatsächlich passiert, ist subtiler und faszinierender: Unser Gehirn bewertet kontinuierlich den Aufwand-Nutzen einer Aktivität. Wenn wir lange konzentriert arbeiten, steigt nicht die physische Belastung, sondern die emotionale Bewertung des Aufwands. Das anteriore Cingulum – der Bereich für Anstrengungserkennung – sendet ein Signal: 'Das wird anstrengend, es lohnt sich nicht mehr'. Das ist Motivationsbewältigung, nicht Energieerschöpfung. Trinken wir Koffein oder bekommen wir eine neue, interessante Aufgabe, verschwindet die 'Ermüdung' sofort.",
+      "Dies erklärt auch das bekannte Phänomen, dass wir bei monotoner Arbeit viel schneller 'müde' werden als bei interessanter Tätigkeit – obwohl die kognitiven Anforderungen identisch sind. Oder warum ein Gamer nach acht Stunden konzentriertem Spielen energiegeladen ist, während ein Buchhalter nach zwei Stunden erschöpft wirkt. Der biologische Aufwand ist gleich. Die Bewertung ist unterschiedlich. Unser Gehirn ist nicht schwach – es ist nur ehrlich über das, was es als lohnenswert einstuft."
+    ],
+    "schon_gewusst": "Menschen mit Hirnverletzungen oder neurodegenerativen Erkrankungen berichten tatsächlich von echter kognitiver Ermüdung – aber das ist ein medizinisches Symptom, nicht der normale Zustand. Der Unterschied zeigt: 'normale' mentale Ermüdung ist ein Motivationssignal, keine Ressourcenerschöpfung.",
+    "quelle": "Stanford University: Effort and Perceived Difficulty in Cognitive Tasks",
+    "quelle_url": "https://psychology.stanford.edu/research/effort-and-fatigue",
+    "datum": "2026-04-27"
   }
 ]
