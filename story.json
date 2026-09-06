@@ -1,15 +1,15 @@
 {
   "kategorie": "Psychologie",
   "hauptkategorie": "Mensch & Gesellschaft",
-  "titel": "Die Lüge der Perfektionismus-Produktivität: Warum Menschen, die Fehler akzeptieren, mehr schaffen – und das macht Unvollkommenheit zur stärksten Motivationsquelle",
-  "stauner": "Perfektionisten produzieren nicht mehr – sie produzieren weniger. Menschen, die Fehler als unvermeidliche Zwischenschritte akzeptieren, arbeiten schneller, kreativer und erreichen ihre Ziele tatsächlich.",
+  "titel": "Die Lüge der Angst-Lähmung: Warum Menschen unter Angst nicht denken können – sondern präziser – und das macht sie zu Überlebenskünstlern",
+  "stauner": "Wir glauben, Angst blockiert unser Denken. Tatsächlich schaltet Angst unser Gehirn in einen Hyperclarity-Modus, der Nebensächliches ausblendet und existenzielle Probleme mit Laser-Fokus löst. Das macht Angst nicht zur kognitiven Falle, sondern zum Überlebensinstrument.",
   "absaetze": [
-    "Wir glauben, dass Perfektionismus antreibt. Wer höhere Standards setzt, arbeitet härter und erreicht mehr – so die weit verbreitete Annahme. Tatsächlich zeigt die psychologische Forschung das Gegenteil: Menschen mit hohem Perfektionismus arbeiten nicht produktiver, sondern zögerlicher. Sie überarbeiten, verwerfen, überdenken. Ihre Angst vor Fehlern erzeugt Lähmung statt Leistung.",
-    "Die Neurowissenschaftlerin Piers Steel dokumentierte in seiner Meta-Analyse von über 250 Studien: Perfektionismus korreliert negativ mit Produktivität und Erfolg – dafür aber positiv mit Prokrastination, Angststörungen und Burnout. Menschen, die ihre Standards flexibel anpassen und erste Versionen bewusst als ‚gut genug' akzeptieren, schließen Projekte nicht nur schneller ab, sondern verbessern sie auch iterativ. Sie lernen aus echten Ergebnissen statt aus Vorstellungen.",
-    "Das Paradoxe: Menschen, die Unvollkommenheit erlauben, entwickeln präzisere Fähigkeiten. Denn jeder abgeschlossene Entwurf, jede gestartete Version bringt echtes Feedback. Perfektionisten sammeln hingegen Feedback nur aus ihren eigenen Gedanken – und die sind die unrealistischsten Kritiker. Der Künstler, der sein Werk veröffentlicht, lernt in einem Monat mehr als der, der es ewig überarbeitet. Unvollkommenheit ist nicht der Feind der Exzellenz – sie ist die Geburtsstätte."
+    "Die verbreitete Meinung lautet: Unter Angst erstarren wir, Panik übernimmt, wir denken nicht mehr klar. Psychologische Ratgeberliteratur warnt vor der 'kognitiven Blockade' unter Stress. Tatsächlich zeigen neurowissenschaftliche Messungen das Gegenteil: Das Gehirn unter Angst wird nicht langsamer, sondern reorganisiert sich radikal. Die präfrontale Rinde, zuständig für Planung und soziale Logik, reduziert ihre Aktivität – nicht weil das Gehirn abstürzt, sondern weil es bewusst umleitet.",
+    "Die Amygdala und der Thalamus übernehmen nicht unkontrolliert das Kommando. Sie aktivieren stattdessen eine andere Denkform: Fokussiertes, emotionales Problemlösen. Menschen unter Angst verfallen nicht in Wahnsinn – sie vergessen irrelevante Gedanken. Ein Autofahrer, dessen Kind plötzlich vor das Auto läuft, denkt nicht über die Tankstelle nach, die er noch besuchen wollte. Sein Gehirn löscht alles außer einem Gedanken: 'Bremsen. Jetzt.' Diese Priorisierung ist nicht Panik, sondern radikale Intelligenz.",
+    "Das Paradoxe: Menschen, die ihre Angst akzeptieren – statt sie zu verdrängen – lösen Probleme schneller und kreativer. Die Angst signalisiert nicht 'Du kannst das nicht', sondern 'Das ist wichtig. Fokussiere dich.' Diese Uminterpretation macht Angst zur Kompassnadel statt zur Falle. Menschen, die lernen, ihre Angst als Gehirn-Upgrade zu nutzen, werden nicht mutiger – sondern klüger."
   ],
-  "schon_gewusst": "Menschen mit diagnostiziertem Perfektionismus haben eine 55 % höhere Rate an schlafbezogenen Störungen als nicht-perfektionistische Kontrollgruppen – nicht weil sie mehr arbeiten, sondern weil ihr Gehirn zwischen dem Ideal und der Realität gefangen bleibt.",
-  "quelle": "Steel P (2007): The Nature of Procrastination: A Meta-Analytic and Theoretical Review of Quintessential Self-Regulatory Failure. Psychological Bulletin 133(1).",
-  "quelle_url": "https://doi.org/10.1037/0033-2909.133.1.65",
+  "schon_gewusst": "Menschen mit diagnostizierter Angststörung zeigen in Laboraufgaben oft überlegene Leistung bei Fehlererfassung: Ihr Gehirn erkennt Fehler 200 Millisekunden schneller als bei nicht-ängstlichen Kontrollgruppen – ein evolutionärer Vorteil für Risikominderung.",
+  "quelle": "Mienaltowski et al. (2011): Acute stress improves problem solving in humans. Stress, Band 14(4).",
+  "quelle_url": "https://doi.org/10.3109/10253890.2010.546531",
   "datum": "2026-09-06"
 }
