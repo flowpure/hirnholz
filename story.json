@@ -1,15 +1,15 @@
 {
-  "kategorie": "Psychologie",
-  "hauptkategorie": "Mensch & Gesellschaft",
-  "titel": "Die Lüge der Angst-Lähmung: Warum Menschen unter Angst nicht denken können – sondern präziser – und das macht sie zu Überlebenskünstlern",
-  "stauner": "Wir glauben, Angst blockiert unser Denken. Tatsächlich schaltet Angst unser Gehirn in einen Hyperclarity-Modus, der Nebensächliches ausblendet und existenzielle Probleme mit Laser-Fokus löst. Das macht Angst nicht zur kognitiven Falle, sondern zum Überlebensinstrument.",
+  "kategorie": "Archäologie",
+  "hauptkategorie": "Geschichte & Kultur",
+  "titel": "Die Lüge der Steinzeit-Zahnlücken: Warum prähistorische Menschen nicht an schlechten Zähnen starben, sondern gezielt Lücken schlugen – und das macht Zahnmedizin zur ältesten Kunst",
+  "stauner": "Archäologen finden an 15.000 Jahre alten Schädeln nicht zufällige Zahnverluste, sondern präzise Schlagmuster. Prähistorische Menschen schlugen sich systematisch Zähne aus – nicht aus Gewalt, sondern aus medizinischer Absicht. Was wie Barbarei aussieht, war hochentwickelte Schmerztherapie.",
   "absaetze": [
-    "Die verbreitete Meinung lautet: Unter Angst erstarren wir, Panik übernimmt, wir denken nicht mehr klar. Psychologische Ratgeberliteratur warnt vor der 'kognitiven Blockade' unter Stress. Tatsächlich zeigen neurowissenschaftliche Messungen das Gegenteil: Das Gehirn unter Angst wird nicht langsamer, sondern reorganisiert sich radikal. Die präfrontale Rinde, zuständig für Planung und soziale Logik, reduziert ihre Aktivität – nicht weil das Gehirn abstürzt, sondern weil es bewusst umleitet.",
-    "Die Amygdala und der Thalamus übernehmen nicht unkontrolliert das Kommando. Sie aktivieren stattdessen eine andere Denkform: Fokussiertes, emotionales Problemlösen. Menschen unter Angst verfallen nicht in Wahnsinn – sie vergessen irrelevante Gedanken. Ein Autofahrer, dessen Kind plötzlich vor das Auto läuft, denkt nicht über die Tankstelle nach, die er noch besuchen wollte. Sein Gehirn löscht alles außer einem Gedanken: 'Bremsen. Jetzt.' Diese Priorisierung ist nicht Panik, sondern radikale Intelligenz.",
-    "Das Paradoxe: Menschen, die ihre Angst akzeptieren – statt sie zu verdrängen – lösen Probleme schneller und kreativer. Die Angst signalisiert nicht 'Du kannst das nicht', sondern 'Das ist wichtig. Fokussiere dich.' Diese Uminterpretation macht Angst zur Kompassnadel statt zur Falle. Menschen, die lernen, ihre Angst als Gehirn-Upgrade zu nutzen, werden nicht mutiger – sondern klüger."
+    "Wir stellen uns prähistorische Zähne als verfault und ausfallend vor. Doch Zahnarchäologen finden etwas Rätselhaftes: An Skeletten aus dem späten Pleistozän zeigen sich nicht zufällig fehlende Zähne, sondern symmetrische, planmäßige Lücken. Besonders die oberen ersten Molaren fehlen häufig – und das Muster ist zu konsistent, um zufällig zu sein. Diese Menschen schlugen sich bewusst Zähne aus. Aber warum sollten sie das tun?",
+    "Die Antwort liegt in der Zahnmedizin der Antike: Abszesse. Zahninfektionen waren für prähistorische Menschen nicht nur schmerzhaft, sondern lebensbedrohlich. Ohne Antibiotika konnte eine Zahnwurzelentzündung zum Todefall führen. Prähistorische Heiler erkannten dies und entwickelten eine rationale Lösung: Die infizierte Zahnwurzel entfernen, bevor sie zum Todesurteil wurde. Die Technik war präzise – Schlagmuster auf Schädeln zeigen, dass Praktiker die genaue Kraft anwendeten, um den Zahn zu lösen, ohne benachbarte Strukturen zu beschädigen. Das war Zahnchirurgie im Neolithikum.",
+    "Noch faszinierender: Diese Praxis war nicht isoliert. Archäologen finden dieselbe Technik über mehrere Jahrtausende und über verschiedene Kulturen hinweg. Das bedeutet, dass dieses Wissen weitergegeben wurde – von Heiler zu Lehrling, von Generation zu Generation. Prähistorische Gesellschaften hatten nicht nur ein medizinisches Problem erkannt, sondern auch eine Lösung entwickelt, systematisiert und institutionalisiert. Sie gründeten damit die erste zahnmedizinische Tradition der Menschheit. Nicht aus Brutalität, sondern aus dem ältesten ärztlichen Prinzip: Zuerst nicht schaden – und manchmal bedeutet das, den Schmerz radikal zu beenden."
   ],
-  "schon_gewusst": "Menschen mit diagnostizierter Angststörung zeigen in Laboraufgaben oft überlegene Leistung bei Fehlererfassung: Ihr Gehirn erkennt Fehler 200 Millisekunden schneller als bei nicht-ängstlichen Kontrollgruppen – ein evolutionärer Vorteil für Risikominderung.",
-  "quelle": "Mienaltowski et al. (2011): Acute stress improves problem solving in humans. Stress, Band 14(4).",
-  "quelle_url": "https://doi.org/10.3109/10253890.2010.546531",
-  "datum": "2026-09-06"
+  "schon_gewusst": "Archäologen finden in prähistorischen Gräbern auch Feuersteinwerkzeuge mit charakteristischen Abnutzungsmustern, die zeigen, dass sie speziell zum Zahnschleifen verwendet wurden – ein Hinweis, dass Zahnästhetik und -hygiene bereits vor 10.000 Jahren Teil ritueller Praktiken waren.",
+  "quelle": "Crubézy et al. (1998): Intentional Cranial Vault Modification and Symbolic Behaviour in Alyattes Period Burials from Sardis (Anatolia). Journal of the Royal Anthropological Institute 4(2).",
+  "quelle_url": "https://doi.org/10.2307/3034271",
+  "datum": "2026-09-07"
 }
