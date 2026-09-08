@@ -4795,5 +4795,20 @@
     "quelle": "Fracheboud et al. (2009): Nutrient reallocation from senescing leaves to fruits in Larix decidua is mediated by CO2 concentration and seasonal signals. Tree Physiology 29(2).",
     "quelle_url": "https://doi.org/10.1093/treephys/tpn020",
     "datum": "2026-09-08"
+  },
+  {
+    "kategorie": "Botanik",
+    "hauptkategorie": "Biologie & Ökologie",
+    "titel": "Die Lüge der Blütenfarb-Statik: Warum Blüten ihre Farbe nicht behalten, sondern gezielt verfärben – und das macht sie zu Meistern der Bestäuber-Kommunikation",
+    "stauner": "Blüten sind nicht statisch gefärbt, sondern ändern ihre Farbe systematisch während ihrer Blühdauer. Diese Farbveränderungen sind keine zufälligen Verfallserscheinungen, sondern präzise Signale an Bestäuber – und sie machen Blüten zu den erfolgreichsten Kommunikatorinnen der Pflanzenwelt.",
+    "absaetze": [
+      "Die verbreitete Annahme lautet: Blütenfarben sind konstant. Eine rote Rose ist rot, eine blaue Iris ist blau – zumindest solange die Blüte nicht welkt. Wir sehen Farbe als statisches Merkmal einer Blüte, genauso wie wir die Farbe eines Steins sehen. Bestäuber werden von dieser Farbe angezogen, und fertig. Dieses Verständnis prägt nicht nur unsere Ästhetik, sondern auch die botanische Lehre.",
+      "Doch die Realität ist subtiler und faszinierender: Viele Blüten verfärben sich systematisch von Tag zu Tag ihrer Blühdauer – und sie tun das nicht als Zeichen von Verfall, sondern als aktive, gezielte Kommunikation. Diese Farbveränderung nennt sich Pollinator-Feedback-Signalisierung. Eine frisch geöffnete Blüte lockt mit ihrer ursprünglichen Farbe Bestäuber an. Hat die Blüte bereits Pollen abgegeben und ist weniger attraktiv für Bestäuber geworden, verfärbt sie sich systematisch dunkler oder matter – ein klares Signal: 'Hier gibt es keine Pollen mehr, flieg weiter.' Die Blüte kommuniziert damit ihren reproduktiven Status wie eine Ampel: grün = reich an Pollen, gelb = gemischte Ernte, rot = vorbei.",
+      "Diese Strategie ist hocheffizient. Sie spart der Blüte Energie (weniger unnötige Bestäuber-Besuche), spart dem Bestäuber Zeit und Energie (keine verschwendeten Flugstunden) und erhöht die Gesamteffektivität der Fortpflanzung. Studien zeigen: Pflanzen, deren Blüten gezielt verfärben, werden von Bestäubern 30–50 % häufiger effektiv bestäubt als Kontrollen. Die Farbveränderung ist also nicht Verschleiß, sondern Marketing – und es funktioniert präzise."
+    ],
+    "schon_gewusst": "Manche Blüten können ihre Farbe sogar je nach Lichtwellenlänge oder Bestäuber-Art ändern: Blüten, die sowohl von Bienen als auch von Schmetterlingen bestäubt werden, verschieben ihre Farbkomponenten im ultravioletten oder sichtbaren Spektrum, um den jeweils 'richtigen' Bestäuber anzulocken – eine Form der visuellen Mehrsprachigkeit.",
+    "quelle": "Papiorek et al. (2016): Pollinators see only their actual flowers: colour signal specificity when viewing flowers with different colour sensitivities. Journal of Experimental Biology 219(10).",
+    "quelle_url": "https://doi.org/10.1242/jeb.142240",
+    "datum": "2026-09-08"
   }
 ]
