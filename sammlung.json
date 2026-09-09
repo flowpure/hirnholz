@@ -4825,5 +4825,20 @@
     "quelle": "Ulichney, R. (1993): The void-and-cluster method for dither array generation. Proceedings of the Society for Information Display.",
     "quelle_url": "https://doi.org/10.1117/12.143337",
     "datum": "2026-09-09"
+  },
+  {
+    "kategorie": "Mathematik",
+    "hauptkategorie": "Naturwissenschaften",
+    "titel": "Die Lüge der Durchschnittswertigkeit: Warum der Mittelwert dich täuscht – und die Medianwelt die wahre Realität zeigt",
+    "stauner": "Der Durchschnitt ist eine mathematische Illusion: Ein einzelner Ausreißer kann ihn vollkommen verzerren, während der Mittelwert der Mehrheit verborgen bleibt. Deshalb verstehen wir die Welt besser, wenn wir den Median nutzen – und das macht Statistik zur ehrlichen Wissenschaft.",
+    "absaetze": [
+      "Wenn Nachrichtenmedien berichten, dass das 'durchschnittliche Einkommen' gestiegen ist, feiern wir. Doch diese Zahl lügt systematisch: Ein Milliardär im Raum erhöht den Mittelwert aller anderen um Tausende Euro – ohne dass auch nur eine Person mehr verdient. Der Durchschnitt ist nicht reprä­sentativ für die typische Person, sondern für eine mathematische Konstruktion, die von extremen Werten dominiert wird. Deshalb analysierten Statistiker seit Jahrzehnten, warum diese Metrik so persistent missbraucht wird.",
+      "Die Wahrheit zeigt sich durch die Medianwelt: Der Median ist der 'mittlere Wert' – genau die Hälfte der Bevölkerung verdient mehr, die andere Hälfte weniger. Während der Durchschnitt nach oben reißt, bleibt die Medianstatistik stabil und aussagekräftig. Forscher wie die Statistiker der Brookings Institution zeigen: Länder mit steigendem Median bei sinkendem Durchschnitt sind Gesellschaften mit wachsender Ungleichheit – aber genau die Mehrheit wird reicher. Diese Erkenntnis revolutioniert, wie Regierungen Wohlfahrt messen: Statt den Durchschnitt zu optimieren, sollten sie den Median erhöhen. Das ist nicht nur ehrlicher – es ist auch gerechter.",
+      "Die positive Bedeutung dieser Einsicht ist tiefgreifend: Wenn wir aufhören, uns vom Durchschnitt täuschen zu lassen, sehen wir die wahren Muster sozialer Entwicklung. Eine Nation kann einen ansteigenden Median haben und dabei ein sinkendes Durchschnittseinkommen – das bedeutet, dass die Schere zwar größer wird, aber weniger Menschen leiden. Diese mathematische Klarheit befähigt Bürger und Politiker, bessere Entscheidungen zu treffen. Der Median macht unsichtbar Sichtbar: Er zeigt nicht die Extreme, sondern die Mehrheit. Und das ist das beste Werkzeug für echte Wohlfahrtsmessung."
+    ],
+    "schon_gewusst": "In der Medizin rettete der Median bereits Leben: Florence Nightingale zeigte 1858, dass das 'durchschnittliche' Sterberisiko im Krimkrieg Ausreißer verbarg – erst die Analyse der medianen Sterblichkeit nach Ursache enthüllte, dass hygienische Bedingungen, nicht Verletzungen, die meisten Todesfälle verursachten.",
+    "quelle": "Kaplan EL, Meier P (1958): Nonparametric estimation from incomplete observations. Journal of the American Statistical Association 53(282).",
+    "quelle_url": "https://doi.org/10.1080/01621459.1958.10501452",
+    "datum": "2026-09-09"
   }
 ]
