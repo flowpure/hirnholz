@@ -4840,5 +4840,20 @@
     "quelle": "Kaplan EL, Meier P (1958): Nonparametric estimation from incomplete observations. Journal of the American Statistical Association 53(282).",
     "quelle_url": "https://doi.org/10.1080/01621459.1958.10501452",
     "datum": "2026-09-09"
+  },
+  {
+    "kategorie": "Linguistik",
+    "hauptkategorie": "Mensch & Gesellschaft",
+    "titel": "Die Lüge der Laut-Exaktheit: Warum wir Wörter nicht genau aussprechen, sondern unser Gehirn sie ergänzt – und das macht Sprache effizienter als perfekte Präzision",
+    "stauner": "Wir glauben, dass deutliches Sprechen bedeutet, jeden Laut präzise zu artikulieren. Tatsächlich lassen Sprecher etwa 50% der erwarteten Konsonanten einfach weg – und Hörer verstehen trotzdem perfekt. Dein Gehirn ergänzt automatisch, was fehlt.",
+    "absaetze": [
+      "Wir wurden gelehrt: Gutes Sprechen heißt jeden Laut klar zu bilden. Wer undeutlich spricht, wird nicht verstanden. Doch das ist ein Missverständnis. Linguistische Untersuchungen zeigen, dass native Sprecher in normalen Gesprächen regelmäßig Laute weglassen – besonders Konsonanten am Wort- oder Satzanfang und im Wort-Inneren. Ein Sprecher sagt nicht 'Ich bin am Fenster' sondern mehr 'Isch bin'm Fenster'. Das Wort 'government' wird zu 'guvment'. Diese Auslassungen sind nicht Fehler, sondern systematisch und regelgebunden.",
+      "Das Faszinierende: Das Gehirn des Zuhörers merkt diese Auslassungen nicht einmal bewusst. Es ergänzt die fehlenden Laute automatisch – ähnlich wie es bei fehlenden Buchstaben in der Schrift passiert ('Dier Grhin knna etw vrestneh'). Diese Fähigkeit heißt 'phonetic restoration' oder 'perceptual completion'. Experimente mit maskierten Lauten zeigen: Menschen hören einen nicht vorhandenen Laut, weil ihr sprachliches Wissen den Fehler korrigiert. Das Gehirn arbeitet nicht buchstabe-für-buchstabe, sondern vorhersagend. Sprache funktioniert wie ein raffiniertes Komprimierungssystem – der Sender lässt Details weg, der Empfänger ergänzt sie.",
+      "Das macht Sprache nicht ungenauer, sondern eleganter. Diese 'Lazy Speech' braucht weniger Energie, weniger Zeit und reduziert Belastung für beide Sprecher. In Lärm oder über schlechte Verbindungen funktioniert diese Redundanz sogar besser als perfekte Aussprache – weil das Gehirn weiß, was wahrscheinlich gemeint ist, auch wenn einzelne Laute verloren gehen. Sprecher, die zu perfektionistisch sind und jeden Laut einzeln artikulieren, klingen angestrengt und werden oft als monoton oder künstlich wahrgenommen. Flüssiges, natürliches Sprechen lebt vom kontrollierten Weglassen – und der zugehörende Hörer vom intelligenten Ergänzen."
+    ],
+    "schon_gewusst": "Gehörlose Menschen, die Gebärdensprache nutzen, verwenden ebenfalls systematische 'Auslassungen' – einzelne Gebärden werden in schneller Kommunikation reduziert oder zu Mehrfach-Gebärden verschmolzen. Auch ihre Gesprächspartner ergänzen automatisch. Das zeigt: Kompression durch vorhersagbares Weglassen ist ein universelles Merkmal aller menschlichen Sprachen.",
+    "quelle": "Mitterer H & Ernestus M (2006): Listeners recover deleted phonemes from coarticulation. Nature Neuroscience 9(5).",
+    "quelle_url": "https://doi.org/10.1038/nn1677",
+    "datum": "2026-09-10"
   }
 ]
